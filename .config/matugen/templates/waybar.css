@@ -1,0 +1,8 @@
+@define-color primarydark {{colors.primary_container.default.hex}};
+@define-color primary {{colors.primary.default.hex}};
+@define-color secondary {{colors.secondary_container.default.hex}};
+@define-color tertiary {{colors.tertiary_container.default.hex}};
+@define-color tertiarybright {{colors.tertiary.default.hex}};
+@define-color on-primary {{colors.on_primary.default.hex}};
+@define-color background {{colors.surface.default.hex}};
+@define-color text {{colors.on_surface.default.hex}};

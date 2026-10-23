@@ -1,0 +1,195 @@
+/* Importiert die von Matugen generierten Farben */
+@import "colors.css";
+
+* {
+    border: none;
+    border-radius: 0px;
+    font-family: monospace;
+    font-size: 13px;
+}
+
+window#waybar {
+    background: transparent;
+    color: @text;
+}
+
+/* Den Standard-Hintergrund der mittleren Gruppe entfernen */
+.modules-center {
+    background: transparent;
+    border: none;
+}
+
+/* 5 Pillen mit flüssiger Animation */
+#custom-media {
+    background: @background;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    margin: 4px 2px;
+    padding: 0 12px;
+    color: @text;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#custom-media:hover {
+    color: #ffffff;
+    border-radius: 5px;
+    border: 1px solid @primary;
+    padding: 0 16px;
+}
+
+#clock {
+    background: @primary;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    margin: 4px 2px;
+    padding: 0 12px;
+    color: @on-primary;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#clock:hover {
+    color: #ffffff;
+    border: 1px solid @text;
+    border-radius: 5px;
+    padding: 0 16px;
+}
+
+#memory {
+    background: @text;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    margin: 4px 2px;
+    padding: 0 12px; /* Identisch zu #custom-power */
+    color: @background;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#memory:hover {
+    color: #ffffff;
+    border: 1px solid @primary;
+    border-radius: 5px;
+    padding: 0 16px; /* Identisch zu #custom-power */
+}
+
+#network {
+    background: @primary; 
+    opacity: 1;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    margin: 4px 2px;
+    padding: 0 12px;
+    color: @on-primary;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#network:hover {
+    color: #ffffff;
+    border: 1px solid @text;
+    border-radius: 5px;
+    padding: 0 16px;
+}
+
+#pulseaudio {
+    background: @background;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    margin: 4px 2px;
+    padding: 0 12px;
+    color: @text;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#pulseaudio:hover {
+    color: #ffffff;
+    border: 1px solid @primary;
+    border-radius: 5px;
+    padding: 0 16px;
+}
+
+#custom-hdr {
+    background: @primary;
+    opacity: 1;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    margin: 4px 2px;
+    padding: 0 12px;
+    color: @on-primary;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#custom-hdr:hover {
+    color: #ffffff;
+    border: 1px solid @text;
+    border-radius: 5px;
+    padding: 0 16px;
+}
+
+#custom-power {
+    background: @background;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    margin: 4px 2px;
+    padding: 0 12px;
+    color: @text;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#custom-power:hover {
+    color: #ffffff;
+    border: 1px solid @primary;
+    border-radius: 5px;
+    padding: 0 16px;
+}
+
+/* Wetter-Modul Styling - gleiche Farbe wie Memory */
+#custom-weather {
+    background: @text;  /* Gleiche wie #memory */
+    border: 1px solid transparent;
+    border-radius: 5px;
+    margin: 4px 2px;
+    padding: 0 12px;
+    color: @background;  /* Gleiche wie #memory */
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#custom-weather:hover {
+    color: #ffffff;
+    border: 1px solid @primary;
+    border-radius: 5px;
+    padding: 0 16px;
+}
+
+#custom-dmount {
+    background: @text;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    margin: 4px 2px;
+    padding: 0 12px;
+    color: @background;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#custom-dmount:hover {
+    color: #ffffff;
+    border: 1px solid @primary;
+    border-radius: 5px;
+    padding: 0 16px;
+}
+
+#custom-sunshine {
+    background: @primary;
+    opacity: 1;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    margin: 4px 2px;
+    padding: 0 12px;
+    color: @on-primary;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#custom-sunshine:hover {
+    color: #ffffff;
+    border: 1px solid @text;
+    border-radius: 5px;
+    padding: 0 16px;
+}

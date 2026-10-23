@@ -1,0 +1,74 @@
+#!/usr/bin/env bash
+
+# Restore wallpaper and colors on Niri startup
+STATE_FILE="$HOME/.cache/wallpaper_state"
+FRAME_CACHE="/tmp/matugen_frame.png"
+LOG_FILE="/tmp/matugen_restore.log"
+MATUGEN_BIN="$(command -v matugen || echo "$HOME/.cargo/bin/matugen" || echo "$HOME/.local/bin/matugen")"
+
+echo "=== Restore Wallpaper Script Started at $(date) ===" >> "$LOG_FILE"
+
+if [ ! -f "$STATE_FILE" ]; then
+    echo "No state file found at $STATE_FILE" >> "$LOG_FILE"
+    exit 0
+fi
+
+# Source the state file
+source "$STATE_FILE"
+
+echo "Restoring wallpaper: $WALLPAPER_PATH" >> "$LOG_FILE"
+echo "Selected: $SELECTED" >> "$LOG_FILE"
+
+if [ -z "$WALLPAPER_PATH" ] || [ ! -f "$WALLPAPER_PATH" ]; then
+    echo "Wallpaper path invalid or file doesn't exist: $WALLPAPER_PATH" >> "$LOG_FILE"
+    exit 1
+fi
+
+# Kill old mpvpaper instances
+pkill -x mpvpaper
+sleep 0.2
+
+# Start mpvpaper (placed in the niri backdrop via layer-rule)
+echo "Starting mpvpaper: $WALLPAPER_PATH" >> "$LOG_FILE"
+nohup mpvpaper \
+    --loop \
+    -o "no-audio loop-file=inf image-display-duration=inf hwdec=nvdec hwdec-codecs=all cache=yes demuxer-readahead-secs=20 panscan=1.0" \
+    "*" "$WALLPAPER_PATH" \
+    >/dev/null 2>&1 &
+disown
+
+# Extract still frame for Matugen
+if [[ "$IS_VIDEO" == "true" ]]; then
+    echo "Extracting video frame at 1s..." >> "$LOG_FILE"
+    ffmpeg -y -ss 00:00:01 -i "$WALLPAPER_PATH" -vframes 1 "$FRAME_CACHE" &>/dev/null
+    IMAGE_TO_USE="$FRAME_CACHE"
+elif [[ "$IS_GIF" == "true" ]]; then
+    echo "Extracting GIF frame..." >> "$LOG_FILE"
+    ffmpeg -y -i "$WALLPAPER_PATH" -vframes 1 "$FRAME_CACHE" &>/dev/null
+    IMAGE_TO_USE="$FRAME_CACHE"
+else
+    IMAGE_TO_USE="$WALLPAPER_PATH"
+fi
+
+echo "Using image for matugen: $IMAGE_TO_USE" >> "$LOG_FILE"
+
+if [ -f "$IMAGE_TO_USE" ]; then
+    # Run matugen to restore colors
+    echo "Running matugen..." >> "$LOG_FILE"
+    if [ -n "$MATUGEN_BIN" ] && [ -f "$MATUGEN_BIN" ]; then
+        "$MATUGEN_BIN" image "$IMAGE_TO_USE" -m dark --source-color-index 0 >> "$LOG_FILE" 2>&1
+        sleep 0.1
+
+        # Reload waybar if running
+        if pgrep -x waybar > /dev/null; then
+            echo "Reloading waybar..." >> "$LOG_FILE"
+            pkill -SIGUSR2 waybar
+        fi
+    else
+        echo "Matugen binary not found at $MATUGEN_BIN" >> "$LOG_FILE"
+    fi
+else
+    echo "Image file not found: $IMAGE_TO_USE" >> "$LOG_FILE"
+fi
+
+echo "=== Restore completed at $(date) ===" >> "$LOG_FILE"

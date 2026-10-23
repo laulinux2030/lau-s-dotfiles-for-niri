@@ -1,0 +1,10 @@
+config-file = ?themes/matugen
+
+# Allow full surface transparency
+background-opacity = 0.2
+
+# Window padding
+window-padding-x = 8
+window-padding-y = 8
+
+confirm-close-surface = false

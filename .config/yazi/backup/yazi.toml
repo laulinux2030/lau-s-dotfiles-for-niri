@@ -1,0 +1,10 @@
+[open]
+rules = [
+    { mime = "image/*", use = "swayimg" },
+    { mime = "video/*", use = "swayimg" },
+]
+
+[opener]
+swayimg = [
+    { run = 'swayimg "$@"', block = false, orphan = true, desc = "Open with swayimg" }
+]

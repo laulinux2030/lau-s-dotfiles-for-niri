@@ -1,0 +1,31 @@
+# Allow full surface transparency
+background-opacity = 0.2
+
+# Window padding
+window-padding-x = 8
+window-padding-y = 8
+
+confirm-close-surface = false
+
+background = #111318
+foreground = #e2e2e9
+cursor-color = #acc7ff
+selection-background = #3f4759
+selection-foreground = #dae2f9
+
+palette = 0=#111318
+palette = 1=#ffb4ab
+palette = 2=#acc7ff
+palette = 3=#debcdf
+palette = 4=#bec6dc
+palette = 5=#583e5b
+palette = 6=#2a4678
+palette = 7=#e2e2e9
+palette = 8=#44474f
+palette = 9=#93000a
+palette = 10=#acc7ff
+palette = 11=#debcdf
+palette = 12=#bec6dc
+palette = 13=#583e5b
+palette = 14=#2a4678
+palette = 15=#c4c6d0

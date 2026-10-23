@@ -1,0 +1,264 @@
+/* Importiert die von Matugen generierten Farben */
+@import "colors.css";
+
+* {
+    border: none;
+    border-radius: 0px;
+    font-family: "JetBrainsMono Nerd Font", "JetBrains Mono", monospace;
+    font-size: 16px;
+}
+
+window#waybar {
+    background: transparent;
+    color: @text;
+}
+
+window#waybar {
+    animation: bar-in 600ms ease-out;
+    }
+
+@keyframes bar-in {
+    from { opacity:0; }
+    to	 { opacity:1; }
+    }
+
+tooltip {
+    background-color: alpha(@primarydark, 0.99);
+    border: 1px solid @text;
+    border-radius: 6px; /* Adjust the value to your liking */
+}
+
+/* Den Standard-Hintergrund der mittleren Gruppe entfernen */
+.modules-center {
+    background: transparent;
+    border: none;
+}
+
+/* 5 Pillen mit flüssiger Animation */
+#custom-media {
+    background: @tertiary;
+    border: 1px solid @text;
+    border-radius: 5px;
+    margin: 4px 2px;
+    padding: 0px 12px;
+    color: @text;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#custom-media:hover {
+    color: #ffffff;
+    border-radius: 6px;
+    border: 1px solid @primary;
+    padding: 0 16px;
+}
+
+#clock {
+    background: @primarydark;
+    border: 1px solid @text;
+    border-radius: 5px;
+    margin: 4px 2px;
+    padding: 0 12px;
+    color: @text;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#clock:hover {
+    color: #ffffff;
+    border: 1px solid @primary;
+    border-radius: 6px;
+    padding: 0 16px;
+}
+
+#memory {
+    background: @secondary;
+    border: 1px solid @text;
+    border-radius: 5px;
+    margin: 4px 2px;
+    padding: 0 12px; /* Identisch zu #custom-power */
+    color: @text;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#memory:hover {
+    color: #ffffff;
+    border: 1px solid @primary;
+    border-radius: 6px;
+    padding: 0 16px; /* Identisch zu #custom-power */
+}
+
+#network {
+    background: @tertiary; 
+    opacity: 1;
+    border: 1px solid @text;
+    border-radius: 5px;
+    margin: 4px 2px;
+    padding: 0 12px;
+    color: @text;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#network:hover {
+    color: #ffffff;
+    border: 1px solid @primary;
+    border-radius: 6px;
+    padding: 0 16px;
+}
+
+#pulseaudio {
+    background: @secondary;
+    border: 1px solid @text;
+    border-radius: 5px;
+    margin: 4px 2px;
+    padding: 0 12px;
+    color: @text;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#pulseaudio:hover {
+    color: #ffffff;
+    border: 1px solid @primary;
+    border-radius: 6px;
+    padding: 0 16px;
+}
+
+#custom-hdr {
+    background: @primarydark;
+    opacity: 1;
+    border: 1px solid @text;
+    border-radius: 5px;
+    margin: 4px 2px;
+    padding: 0 12px;
+    color: @text;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#custom-hdr:hover {
+    color: #ffffff;
+    border: 1px solid @primary;
+    border-radius: 6px;
+    padding: 0 16px;
+}
+
+#custom-power {
+    background: #a11608;
+    border: 1px solid @text;
+    border-radius: 5px;
+    margin: 4px 2px;
+    padding: 0 12px;
+    color: @text;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#custom-power:hover {
+    background: #A12608;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 6px;
+    padding: 0 16px;
+}
+
+/* Wetter-Modul Styling - gleiche Farbe wie Memory */
+#custom-weather {
+    background: @secondary;  /* Gleiche wie #memory */
+    border: 1px solid @text;
+    border-radius: 5px;
+    margin: 4px 2px;
+    padding: 0 12px;
+    color: @text;  /* Gleiche wie #memory */
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#custom-weather:hover {
+    color: #ffffff;
+    border: 1px solid @primary;
+    border-radius: 6px;
+    padding: 0 16px;
+}
+
+#custom-mount {
+    background: @tertiary;
+    border: 1px solid @text;
+    border-radius: 5px;
+    margin: 4px 2px;
+    padding: 0 12px;
+    color: @text;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#custom-mount:hover {
+    color: #ffffff;
+    border: 1px solid @primary;
+    border-radius: 6px;
+    padding: 0 16px;
+}
+
+#custom-sunshine {
+    background: @primarydark;
+    opacity: 1;
+    border: 1px solid @text;
+    border-radius: 5px;
+    margin: 4px 2px;
+    padding: 0 12px;
+    color: @text;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#custom-sunshine:hover {
+    color: #ffffff;
+    border: 1px solid @primary;
+    border-radius: 6px;
+    padding: 0 16px;
+}
+
+#custom-wallpaper {
+    background: @tertiary; 
+    opacity: 1;
+    border: 1px solid @text;
+    border-radius: 5px;
+    margin: 4px 2px;
+    padding: 0 12px;
+    color: @text;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#custom-wallpaper:hover {
+    color: #ffffff;
+    border: 1px solid @primary;
+    border-radius: 6px;
+    padding: 0 16px;
+}
+
+#custom-cliphist {
+    background: @primarydark;
+    opacity: 1;
+    border: 1px solid @text;
+    border-radius: 5px;
+    margin: 4px 2px;
+    padding: 0 12px;
+    color: @text;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#custom-cliphist:hover {
+    color: #ffffff;
+    border: 1px solid @primary;
+    border-radius: 6px;
+    padding: 0 16px;
+}
+
+#custom-drun {
+    background: @secondary;  /* Gleiche wie #memory */
+    border: 1px solid @text;
+    border-radius: 5px;
+    margin: 4px 2px;
+    padding: 0 12px;
+    color: @text;  /* Gleiche wie #memory */
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#custom-drun:hover {
+    color: #ffffff;
+    border: 1px solid @primary;
+    border-radius: 6px;
+    padding: 0 16px;
+}

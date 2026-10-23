@@ -1,0 +1,77 @@
+[mgr]
+cwd = { fg = "{{colors.primary.default.hex}}" }
+
+# Hovered / Selected items
+hovered = { fg = "{{colors.on_primary_container.default.hex}}", bg = "{{colors.primary_container.default.hex}}" }
+preview_hovered = { underline = true }
+
+# Selection / Multi-select
+find_keyword  = { fg = "{{colors.primary.default.hex}}", bold = true, italic = true }
+find_position = { fg = "{{colors.secondary.default.hex}}", bold = true }
+
+# Border & Header
+border = { fg = "{{colors.outline.default.hex}}" }
+title  = { fg = "{{colors.primary.default.hex}}" }
+
+[mode]
+normal_main = { fg = "{{colors.on_primary.default.hex}}", bg = "{{colors.primary.default.hex}}", bold = true }
+normal_alt  = { fg = "{{colors.primary.default.hex}}", bg = "{{colors.surface_container_high.default.hex}}" }
+select_main = { fg = "{{colors.on_secondary.default.hex}}", bg = "{{colors.secondary.default.hex}}", bold = true }
+select_alt  = { fg = "{{colors.secondary.default.hex}}", bg = "{{colors.surface_container_high.default.hex}}" }
+
+[status]
+separator_open  = ""
+separator_close = ""
+separator_style = { fg = "{{colors.surface_container_high.default.hex}}", bg = "{{colors.surface_container_high.default.hex}}" }
+
+# Permissions
+permissions_t = { fg = "{{colors.primary.default.hex}}" }
+permissions_r = { fg = "{{colors.secondary.default.hex}}" }
+permissions_w = { fg = "{{colors.error.default.hex}}" }
+permissions_x = { fg = "{{colors.tertiary.default.hex}}" }
+permissions_s = { fg = "{{colors.outline.default.hex}}" }
+
+# ==============================================================================
+# Dateinamen und Ordner-Text (Streng Weiß)
+# ==============================================================================
+[filetype]
+rules = [
+	# Alle Verzeichnisse in Weiß
+	{ url = "*/", fg = "#ffffff", bold = true },
+
+	# Executables & Symlinks in Weiß
+	{ url = "*", is = "exec", fg = "#ffffff" },
+	{ url = "*", is = "link", fg = "#ffffff", italic = true },
+
+	# Fallback: Alle anderen Dateien in Weiß
+	{ url = "*", fg = "#ffffff" },
+]
+
+# ==============================================================================
+# Ordner & Datei-Icons (Matugen Farben gemäß Yazi Spec)
+# ==============================================================================
+[icon]
+
+# Prepend Dirs: Überschreibt die XDG-Ordner
+prepend_dirs = [
+	{ name = "Desktop",     text = "󰨇", fg = "{{colors.primary.default.hex}}" },
+	{ name = "Development", text = "󰲋", fg = "{{colors.primary.default.hex}}" },
+	{ name = "Downloads",   text = "󰉍", fg = "{{colors.primary.default.hex}}" },
+	{ name = "Library",     text = "󰂺", fg = "{{colors.primary.default.hex}}" },
+	{ name = "Movies",      text = "󰿎", fg = "{{colors.primary.default.hex}}" },
+	{ name = "Music",       text = "󱍙", fg = "{{colors.primary.default.hex}}" },
+	{ name = "Pictures",    text = "󰋩", fg = "{{colors.primary.default.hex}}" },
+	{ name = "Public",      text = "󰋩", fg = "{{colors.primary.default.hex}}" },
+	{ name = "Videos",      text = "󰕧", fg = "{{colors.primary.default.hex}}" },
+	{ name = "Documents",   text = "󰈙", fg = "{{colors.primary.default.hex}}" },
+]
+
+# Prepend Conds: Ordner-Fallback & Spezial-Dateitypen (Executables / Links)
+prepend_conds = [
+	# Generisches Ordner-Icon für alle restlichen Ordner
+	{ if = "dir", text = "󰉋", fg = "{{colors.primary.default.hex}}" },
+
+	# Spezial-Icons
+	{ if = "exec", text = "󰅍", fg = "{{colors.tertiary.default.hex}}" },
+	{ if = "link", text = "󰌷", fg = "{{colors.secondary.default.hex}}" },
+]

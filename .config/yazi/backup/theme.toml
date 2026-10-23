@@ -1,0 +1,77 @@
+[mgr]
+cwd = { fg = "#93cdf6" }
+
+# Hovered / Selected items
+hovered = { fg = "#c7e7ff", bg = "#004c6c" }
+preview_hovered = { underline = true }
+
+# Selection / Multi-select
+find_keyword  = { fg = "#93cdf6", bold = true, italic = true }
+find_position = { fg = "#b6c9d8", bold = true }
+
+# Border & Header
+border = { fg = "#8b9198" }
+title  = { fg = "#93cdf6" }
+
+[mode]
+normal_main = { fg = "#00344c", bg = "#93cdf6", bold = true }
+normal_alt  = { fg = "#93cdf6", bg = "#262a2e" }
+select_main = { fg = "#21323e", bg = "#b6c9d8", bold = true }
+select_alt  = { fg = "#b6c9d8", bg = "#262a2e" }
+
+[status]
+separator_open  = ""
+separator_close = ""
+separator_style = { fg = "#262a2e", bg = "#262a2e" }
+
+# Permissions
+permissions_t = { fg = "#93cdf6" }
+permissions_r = { fg = "#b6c9d8" }
+permissions_w = { fg = "#ffb4ab" }
+permissions_x = { fg = "#cdc0e9" }
+permissions_s = { fg = "#8b9198" }
+
+# ==============================================================================
+# Dateinamen und Ordner-Text (Streng Weiß)
+# ==============================================================================
+[filetype]
+rules = [
+	# Alle Verzeichnisse in Weiß
+	{ url = "*/", fg = "#ffffff", bold = true },
+
+	# Executables & Symlinks in Weiß
+	{ url = "*", is = "exec", fg = "#ffffff" },
+	{ url = "*", is = "link", fg = "#ffffff", italic = true },
+
+	# Fallback: Alle anderen Dateien in Weiß
+	{ url = "*", fg = "#ffffff" },
+]
+
+# ==============================================================================
+# Ordner & Datei-Icons (Matugen Farben gemäß Yazi Spec)
+# ==============================================================================
+[icon]
+
+# Prepend Dirs: Überschreibt die XDG-Ordner
+prepend_dirs = [
+	{ name = "Desktop",     text = "󰨇", fg = "#93cdf6" },
+	{ name = "Development", text = "󰲋", fg = "#93cdf6" },
+	{ name = "Downloads",   text = "󰉍", fg = "#93cdf6" },
+	{ name = "Library",     text = "󰂺", fg = "#93cdf6" },
+	{ name = "Movies",      text = "󰿎", fg = "#93cdf6" },
+	{ name = "Music",       text = "󱍙", fg = "#93cdf6" },
+	{ name = "Pictures",    text = "󰋩", fg = "#93cdf6" },
+	{ name = "Public",      text = "󰋩", fg = "#93cdf6" },
+	{ name = "Videos",      text = "󰕧", fg = "#93cdf6" },
+	{ name = "Documents",   text = "󰈙", fg = "#93cdf6" },
+]
+
+# Prepend Conds: Ordner-Fallback & Spezial-Dateitypen (Executables / Links)
+prepend_conds = [
+	# Generisches Ordner-Icon für alle restlichen Ordner
+	{ if = "dir", text = "󰉋", fg = "#93cdf6" },
+
+	# Spezial-Icons
+	{ if = "exec", text = "󰅍", fg = "#cdc0e9" },
+	{ if = "link", text = "󰌷", fg = "#b6c9d8" },
+]

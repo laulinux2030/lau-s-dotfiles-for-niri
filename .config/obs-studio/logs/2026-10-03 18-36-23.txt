@@ -1,0 +1,383 @@
+18:36:23.433: Platform: Wayland
+18:36:23.434: CPU Name: AMD Ryzen 7 5700X 8-Core Processor
+18:36:23.434: CPU Speed: 3834.264MHz
+18:36:23.434: Physical Cores: 8, Logical Cores: 16
+18:36:23.434: Physical Memory: 15383MB Total, 386MB Free
+18:36:23.434: Kernel Version: Linux 7.0.0-38-generic
+18:36:23.435: Distribution: "Ubuntu" "26.04"
+18:36:23.435: Desktop Environment: niri (niri)
+18:36:23.435: Session Type: wayland
+18:36:23.436: Current Date/Time: 2026-10-03, 06:36:23 PM
+18:36:23.436: Browser Hardware Acceleration: true
+18:36:23.437: Qt Version: 6.10.2 (runtime), 6.10.2 (compiled)
+18:36:23.437: Portable mode: false
+18:36:23.550: OBS 32.1.0-0ubuntu3 (linux)
+18:36:23.550: ---------------------------------
+18:36:23.554: ---------------------------------
+18:36:23.554: audio settings reset:
+18:36:23.554: 	samples per sec: 48000
+18:36:23.554: 	speakers:        2
+18:36:23.554: 	max buffering:   960 milliseconds
+18:36:23.554: 	buffering type:  dynamically increasing
+18:36:23.558: ---------------------------------
+18:36:23.558: Initializing OpenGL...
+18:36:23.558: Using EGL/Wayland
+18:36:23.603: Initialized EGL 1.5
+18:36:23.664: Loading up OpenGL on adapter NVIDIA Corporation NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2
+18:36:23.664: OpenGL loaded successfully, version 3.3.0 NVIDIA 610.57.04, shading language 3.30 NVIDIA via Cg compiler
+18:36:23.795: ---------------------------------
+18:36:23.795: video settings reset:
+18:36:23.795: 	base resolution:   1920x1080
+18:36:23.795: 	output resolution: 1920x1080
+18:36:23.795: 	downscale filter:  Bicubic
+18:36:23.795: 	fps:               60/1
+18:36:23.795: 	format:            NV12
+18:36:23.795: 	YUV mode:          Rec. 709/Partial
+18:36:23.796: NV12 texture support enabled
+18:36:23.796: P010 texture support not available
+18:36:23.797: Audio monitoring device:
+18:36:23.797: 	name: Default
+18:36:23.797: 	id: default
+18:36:23.803: ---------------------------------
+18:36:23.809: Failed to load 'en-US' text for module: 'decklink-captions.so'
+18:36:23.813: Failed to load 'en-US' text for module: 'decklink-output-ui.so'
+18:36:23.818: A DeckLink iterator could not be created.  The DeckLink drivers may not be installed
+18:36:23.818: Failed to initialize module 'decklink.so'
+18:36:23.979: [pipewire] Available capture sources:
+18:36:23.979: [pipewire]     - Monitor source
+18:36:23.979: [pipewire]     - Window source
+18:36:23.998: v4l2loopback not installed, virtual camera not registered
+18:36:24.166: LIBVA_DRIVER_NAME variable is set, this could prevent FFmpeg VAAPI from working correctly
+18:36:24.476: VAAPI: API version 1.23
+18:36:24.550: FFmpeg VAAPI H264 encoding supported
+18:36:24.879: FFmpeg VAAPI AV1 encoding supported
+18:36:25.205: FFmpeg VAAPI HEVC encoding supported
+18:36:25.451: [obs-nvenc] NVENC version: 12.1 (compiled) / 13.1 (driver), CUDA driver version: 13.30, AV1 supported: false
+18:36:25.482: [obs-websocket] [obs_module_load] you can haz websockets (Version: 5.7.2 | RPC Version: 1)
+18:36:25.482: [obs-websocket] [obs_module_load] Qt version (compile-time): 6.10.2 | Qt version (run-time): 6.10.2
+18:36:25.482: [obs-websocket] [obs_module_load] Linked ASIO Version: 103002
+18:36:25.495: [obs-websocket] [obs_module_load] Module loaded.
+18:36:25.530: [vlc-video]: VLC 3.0.23 Vetinari found, VLC video source enabled
+18:36:25.530: ---------------------------------
+18:36:25.530:   Loaded Modules:
+18:36:25.530:     vlc-video.so
+18:36:25.530:     text-freetype2.so
+18:36:25.530:     rtmp-services.so
+18:36:25.530:     obs-x264.so
+18:36:25.530:     obs-websocket.so
+18:36:25.530:     obs-transitions.so
+18:36:25.530:     obs-outputs.so
+18:36:25.530:     obs-nvenc.so
+18:36:25.530:     obs-filters.so
+18:36:25.530:     obs-ffmpeg.so
+18:36:25.530:     linux-v4l2.so
+18:36:25.530:     linux-pulseaudio.so
+18:36:25.530:     linux-pipewire.so
+18:36:25.530:     linux-jack.so
+18:36:25.530:     linux-capture.so
+18:36:25.530:     linux-alsa.so
+18:36:25.530:     image-source.so
+18:36:25.530:     frontend-tools.so
+18:36:25.530:     decklink-output-ui.so
+18:36:25.530:     decklink-captions.so
+18:36:25.530: ---------------------------------
+18:36:25.534: ---------------------------------
+18:36:25.534: Available Encoders:
+18:36:25.534:   Video Encoders:
+18:36:25.534: 	- ffmpeg_svt_av1 (SVT-AV1)
+18:36:25.534: 	- ffmpeg_aom_av1 (AOM AV1)
+18:36:25.534: 	- ffmpeg_vaapi_tex (FFmpeg VAAPI H.264)
+18:36:25.534: 	- av1_ffmpeg_vaapi_tex (FFmpeg VAAPI AV1)
+18:36:25.534: 	- hevc_ffmpeg_vaapi_tex (FFmpeg VAAPI HEVC)
+18:36:25.534: 	- obs_nvenc_h264_tex (NVIDIA NVENC H.264)
+18:36:25.534: 	- obs_nvenc_hevc_tex (NVIDIA NVENC HEVC)
+18:36:25.534: 	- obs_x264 (x264)
+18:36:25.534:   Audio Encoders:
+18:36:25.534: 	- ffmpeg_aac (FFmpeg AAC)
+18:36:25.534: 	- ffmpeg_opus (FFmpeg Opus)
+18:36:25.534: 	- ffmpeg_pcm_s16le (FFmpeg PCM (16-bit))
+18:36:25.534: 	- ffmpeg_pcm_s24le (FFmpeg PCM (24-bit))
+18:36:25.534: 	- ffmpeg_pcm_f32le (FFmpeg PCM (32-bit float))
+18:36:25.534: 	- ffmpeg_alac (FFmpeg ALAC (24-bit))
+18:36:25.534: 	- ffmpeg_flac (FFmpeg FLAC (16-bit))
+18:36:25.534: ==== Startup complete ===============================================
+18:36:25.582: Failed to register with host portal QDBusError("org.freedesktop.portal.Error.Failed", "Could not register app ID: Connection already associated with an application ID")
+18:36:25.582: All scene data cleared
+18:36:25.582: ------------------------------------------------
+18:36:25.595: Device for 'Audio Output Capture' source Desktop Audio is also used for audio monitoring.
+18:36:25.595: Deduplication logic is being applied to all monitored sources.
+18:36:25.595: pulse-input: Server name: 'PulseAudio (on PipeWire 1.6.2) 15.0.0'
+18:36:25.595: pulse-input: Audio format: s32le, 48000 Hz, 2 channels
+18:36:25.596: pulse-input: Started recording from 'alsa_output.usb-Focusrite_Scarlett_Solo_USB_Y79F7T40853ABE-00.Direct__Direct__sink.monitor' (default)
+18:36:25.596: [Loaded global audio device]: 'Desktop Audio'
+18:36:25.597: pulse-input: Server name: 'PulseAudio (on PipeWire 1.6.2) 15.0.0'
+18:36:25.597: pulse-input: Audio format: s32le, 48000 Hz, 2 channels
+18:36:25.597: pulse-input: Started recording from 'alsa_input.usb-Focusrite_Scarlett_Solo_USB_Y79F7T40853ABE-00.Direct__Direct__source' (default)
+18:36:25.597: [Loaded global audio device]: 'Mic/Aux'
+18:36:25.604: Device for 'Audio Output Capture' source Desktop Audio is also used for audio monitoring.
+18:36:25.604: Deduplication logic is being applied to all monitored sources.
+18:36:25.625: alsa-input: PCM 'default' rate set to 44100
+18:36:25.625: alsa-input: PCM 'default' channels set to 2
+18:36:25.638: PipeWire initialized
+18:36:25.639: Switched to scene 'Scene'
+18:36:25.639: ------------------------------------------------
+18:36:25.639: Loaded scenes:
+18:36:25.639: - scene 'Scene':
+18:36:25.639:     - source: 'Audio Capture Device (ALSA)' (alsa_input_capture)
+18:36:25.639:     - source: 'Screen Capture (PipeWire)' (pipewire-screen-capture-source)
+18:36:25.639: ------------------------------------------------
+18:36:25.658: VolumeMeter(0x5ba135897bf0)  does not have a property named  "meterThickness"
+18:36:25.660: VolumeMeter(0x5ba135897bf0)  does not have a property named  "meterThickness"
+18:36:25.661: VolumeMeter(0x5ba1361994e0)  does not have a property named  "meterThickness"
+18:36:25.663: VolumeMeter(0x5ba1361994e0)  does not have a property named  "meterThickness"
+18:36:25.664: VolumeMeter(0x5ba136361fa0)  does not have a property named  "meterThickness"
+18:36:25.673: VolumeMeter(0x5ba136361fa0)  does not have a property named  "meterThickness"
+18:36:25.675: VolumeMeter(0x5ba135897bf0)  does not have a property named  "meterThickness"
+18:36:25.676: VolumeMeter(0x5ba1361994e0)  does not have a property named  "meterThickness"
+18:36:25.677: VolumeMeter(0x5ba136361fa0)  does not have a property named  "meterThickness"
+18:36:25.691: VolumeMeter(0x5ba135897bf0)  does not have a property named  "meterThickness"
+18:36:25.692: VolumeMeter(0x5ba135897bf0)  does not have a property named  "meterThickness"
+18:36:25.694: VolumeMeter(0x5ba1361994e0)  does not have a property named  "meterThickness"
+18:36:25.695: VolumeMeter(0x5ba1361994e0)  does not have a property named  "meterThickness"
+18:36:25.697: VolumeMeter(0x5ba136361fa0)  does not have a property named  "meterThickness"
+18:36:25.698: VolumeMeter(0x5ba136361fa0)  does not have a property named  "meterThickness"
+18:36:25.708: VolumeMeter(0x5ba135897bf0)  does not have a property named  "meterThickness"
+18:36:25.710: VolumeMeter(0x5ba1361994e0)  does not have a property named  "meterThickness"
+18:36:25.711: VolumeMeter(0x5ba136361fa0)  does not have a property named  "meterThickness"
+18:36:25.712: [pipewire] Screencast session created
+18:36:25.741: [pipewire] Asking for monitor and window
+18:36:25.912: [pipewire] source selected, setting up screencast
+18:36:25.952: [pipewire] Server version: 1.6.2
+18:36:25.952: [pipewire] Library version: 1.6.2
+18:36:25.952: [pipewire] Header version: 1.6.2
+18:36:25.952: [pipewire] Created stream 0x5ba136294c70
+18:36:25.952: [pipewire] Stream 0x5ba136294c70 state: "connecting" (error: none)
+18:36:25.952: [pipewire] Playing stream 0x5ba136294c70
+18:36:25.952: [pipewire] Stream 0x5ba136294c70 state: "paused" (error: none)
+18:36:25.994: [pipewire] Negotiated format:
+18:36:25.994: [pipewire]     Format: 8 (Spa:Enum:VideoFormat:BGRx)
+18:36:25.994: [pipewire]     Modifier: 0x0
+18:36:25.994: [pipewire]     Size: 2560x1440
+18:36:25.994: [pipewire]     Framerate: 0/1
+18:36:25.994: [pipewire] Negotiated format:
+18:36:25.994: [pipewire]     Format: 8 (Spa:Enum:VideoFormat:BGRx)
+18:36:25.994: [pipewire]     Modifier: 0x300000000e08014
+18:36:25.994: [pipewire]     Size: 2560x1440
+18:36:25.994: [pipewire]     Framerate: 0/1
+18:36:25.998: [pipewire] Stream 0x5ba136294c70 state: "streaming" (error: none)
+18:36:26.157: adding 21 milliseconds of audio buffering, total audio buffering is now 21 milliseconds (source: Desktop Audio)
+18:36:26.157: 
+18:36:35.797: [obs-nvenc: 'simple_video_recording'] settings:
+18:36:35.797: 	codec:        H264
+18:36:35.797: 	rate_control: CQP
+18:36:35.797: 	cqp:          23
+18:36:35.797: 	keyint:       250
+18:36:35.797: 	preset:       p5
+18:36:35.797: 	tuning:       hq
+18:36:35.797: 	multipass:    qres
+18:36:35.797: 	profile:      high
+18:36:35.797: 	width:        1920
+18:36:35.797: 	height:       1080
+18:36:35.797: 	b-frames:     2
+18:36:35.797: 	b-ref-mode:   0
+18:36:35.797: 	lookahead:    true (8 frames)
+18:36:35.797: 	aq:           true
+18:36:35.797: 
+18:36:35.856: [obs-nvenc: 'simple_video_recording'] cuda_surface_init: CUDA call "cu->cuArray3DCreate(&nvsurf->tex, &desc)" failed with CUDA_ERROR_OUT_OF_MEMORY (2): out of memory
+18:36:36.083: [obs-nvenc: 'simple_video_recording'] settings:
+18:36:36.083: 	codec:        H264
+18:36:36.083: 	rate_control: CQP
+18:36:36.083: 	cqp:          23
+18:36:36.083: 	keyint:       250
+18:36:36.083: 	preset:       p5
+18:36:36.083: 	tuning:       hq
+18:36:36.083: 	multipass:    qres
+18:36:36.083: 	profile:      high
+18:36:36.083: 	width:        1920
+18:36:36.083: 	height:       1080
+18:36:36.083: 	b-frames:     2
+18:36:36.083: 	b-ref-mode:   0
+18:36:36.083: 	lookahead:    true (8 frames)
+18:36:36.083: 	aq:           true
+18:36:36.083: 
+18:36:36.114: [obs-nvenc: 'simple_video_recording'] cuda_surface_init: CUDA call "cu->cuArray3DCreate(&nvsurf->tex, &desc)" failed with CUDA_ERROR_OUT_OF_MEMORY (2): out of memory
+18:36:36.217: Already in non_texture encoder, can't fall back further!
+18:36:39.304: [obs-nvenc: 'simple_video_recording'] settings:
+18:36:39.304: 	codec:        H264
+18:36:39.304: 	rate_control: CQP
+18:36:39.304: 	cqp:          23
+18:36:39.304: 	keyint:       250
+18:36:39.304: 	preset:       p5
+18:36:39.304: 	tuning:       hq
+18:36:39.304: 	multipass:    qres
+18:36:39.304: 	profile:      high
+18:36:39.304: 	width:        1920
+18:36:39.304: 	height:       1080
+18:36:39.304: 	b-frames:     2
+18:36:39.304: 	b-ref-mode:   0
+18:36:39.304: 	lookahead:    true (8 frames)
+18:36:39.304: 	aq:           true
+18:36:39.304: 
+18:36:39.340: [obs-nvenc: 'simple_video_recording'] cuda_surface_init: CUDA call "cu->cuArray3DCreate(&nvsurf->tex, &desc)" failed with CUDA_ERROR_OUT_OF_MEMORY (2): out of memory
+18:36:39.558: [obs-nvenc: 'simple_video_recording'] settings:
+18:36:39.558: 	codec:        H264
+18:36:39.558: 	rate_control: CQP
+18:36:39.558: 	cqp:          23
+18:36:39.558: 	keyint:       250
+18:36:39.558: 	preset:       p5
+18:36:39.558: 	tuning:       hq
+18:36:39.558: 	multipass:    qres
+18:36:39.558: 	profile:      high
+18:36:39.558: 	width:        1920
+18:36:39.558: 	height:       1080
+18:36:39.558: 	b-frames:     2
+18:36:39.558: 	b-ref-mode:   0
+18:36:39.558: 	lookahead:    true (8 frames)
+18:36:39.558: 	aq:           true
+18:36:39.558: 
+18:36:39.590: [obs-nvenc: 'simple_video_recording'] cuda_surface_init: CUDA call "cu->cuArray3DCreate(&nvsurf->tex, &desc)" failed with CUDA_ERROR_OUT_OF_MEMORY (2): out of memory
+18:36:39.696: Already in non_texture encoder, can't fall back further!
+18:36:45.126: [obs-nvenc: 'simple_video_recording'] settings:
+18:36:45.126: 	codec:        H264
+18:36:45.126: 	rate_control: CQP
+18:36:45.126: 	cqp:          23
+18:36:45.126: 	keyint:       250
+18:36:45.126: 	preset:       p5
+18:36:45.126: 	tuning:       hq
+18:36:45.126: 	multipass:    qres
+18:36:45.126: 	profile:      high
+18:36:45.126: 	width:        1920
+18:36:45.126: 	height:       1080
+18:36:45.126: 	b-frames:     2
+18:36:45.126: 	b-ref-mode:   0
+18:36:45.126: 	lookahead:    true (8 frames)
+18:36:45.126: 	aq:           true
+18:36:45.126: 
+18:36:45.157: [obs-nvenc: 'simple_video_recording'] cuda_surface_init: CUDA call "cu->cuArray3DCreate(&nvsurf->tex, &desc)" failed with CUDA_ERROR_OUT_OF_MEMORY (2): out of memory
+18:36:45.370: [obs-nvenc: 'simple_video_recording'] settings:
+18:36:45.370: 	codec:        H264
+18:36:45.370: 	rate_control: CQP
+18:36:45.370: 	cqp:          23
+18:36:45.370: 	keyint:       250
+18:36:45.370: 	preset:       p5
+18:36:45.370: 	tuning:       hq
+18:36:45.370: 	multipass:    qres
+18:36:45.370: 	profile:      high
+18:36:45.370: 	width:        1920
+18:36:45.370: 	height:       1080
+18:36:45.370: 	b-frames:     2
+18:36:45.370: 	b-ref-mode:   0
+18:36:45.370: 	lookahead:    true (8 frames)
+18:36:45.370: 	aq:           true
+18:36:45.370: 
+18:36:45.401: [obs-nvenc: 'simple_video_recording'] cuda_surface_init: CUDA call "cu->cuArray3DCreate(&nvsurf->tex, &desc)" failed with CUDA_ERROR_OUT_OF_MEMORY (2): out of memory
+18:36:45.506: Already in non_texture encoder, can't fall back further!
+18:37:10.488: [obs-nvenc: 'simple_video_recording'] settings:
+18:37:10.488: 	codec:        H264
+18:37:10.488: 	rate_control: CQP
+18:37:10.488: 	cqp:          23
+18:37:10.488: 	keyint:       250
+18:37:10.488: 	preset:       p5
+18:37:10.488: 	tuning:       hq
+18:37:10.488: 	multipass:    qres
+18:37:10.488: 	profile:      high
+18:37:10.488: 	width:        1920
+18:37:10.488: 	height:       1080
+18:37:10.488: 	b-frames:     2
+18:37:10.488: 	b-ref-mode:   0
+18:37:10.488: 	lookahead:    true (8 frames)
+18:37:10.488: 	aq:           true
+18:37:10.488: 
+18:37:10.519: [obs-nvenc: 'simple_video_recording'] cuda_surface_init: CUDA call "cu->cuArray3DCreate(&nvsurf->tex, &desc)" failed with CUDA_ERROR_OUT_OF_MEMORY (2): out of memory
+18:37:10.738: [obs-nvenc: 'simple_video_recording'] settings:
+18:37:10.738: 	codec:        H264
+18:37:10.738: 	rate_control: CQP
+18:37:10.738: 	cqp:          23
+18:37:10.738: 	keyint:       250
+18:37:10.738: 	preset:       p5
+18:37:10.738: 	tuning:       hq
+18:37:10.738: 	multipass:    qres
+18:37:10.738: 	profile:      high
+18:37:10.738: 	width:        1920
+18:37:10.738: 	height:       1080
+18:37:10.738: 	b-frames:     2
+18:37:10.738: 	b-ref-mode:   0
+18:37:10.738: 	lookahead:    true (8 frames)
+18:37:10.738: 	aq:           true
+18:37:10.738: 
+18:37:10.771: [obs-nvenc: 'simple_video_recording'] cuda_surface_init: CUDA call "cu->cuArray3DCreate(&nvsurf->tex, &desc)" failed with CUDA_ERROR_OUT_OF_MEMORY (2): out of memory
+18:37:10.877: Already in non_texture encoder, can't fall back further!
+18:37:20.305: ==== Shutting down ==================================================
+18:37:20.350: pulse-input: Stopped recording from 'alsa_output.usb-Focusrite_Scarlett_Solo_USB_Y79F7T40853ABE-00.Direct__Direct__sink.monitor'
+18:37:20.350: pulse-input: Got 2189 packets with 2626800 frames
+18:37:20.350: Deduplication logic stopped.
+18:37:20.350: pulse-input: Stopped recording from 'alsa_input.usb-Focusrite_Scarlett_Solo_USB_Y79F7T40853ABE-00.Direct__Direct__source'
+18:37:20.350: pulse-input: Got 2189 packets with 2626800 frames
+18:37:20.374: [pipewire] Stream 0x5ba136294c70 state: "paused" (error: none)
+18:37:20.374: [pipewire] Stream 0x5ba136294c70 state: "unconnected" (error: none)
+18:37:20.408: All scene data cleared
+18:37:20.408: ------------------------------------------------
+18:37:20.420: Tried to call obs_frontend_remove_event_callback with no callbacks!
+18:37:20.495: [obs-websocket] [obs_module_unload] Shutting down...
+18:37:20.496: Tried to call obs_frontend_remove_event_callback with no callbacks!
+18:37:20.496: [obs-websocket] [obs_module_unload] Finished shutting down.
+18:37:20.501: [Scripting] Total detached callbacks: 0
+18:37:20.501: Freeing OBS context data
+18:37:20.525: == Profiler Results =============================
+18:37:20.525: run_program_init: 2504.81 ms
+18:37:20.525:  ┣OBSApp::AppInit: 56.442 ms
+18:37:20.525:  ┃ ┗OBSApp::InitLocale: 11.419 ms
+18:37:20.525:  ┗OBSApp::OBSInit: 2269.34 ms
+18:37:20.525:    ┣obs_startup: 2.651 ms
+18:37:20.525:    ┗OBSBasic::OBSInit: 2149.81 ms
+18:37:20.525:      ┣OBSBasic::InitBasicConfig: 3.01 ms
+18:37:20.525:      ┣OBSBasic::ResetAudio: 0.234 ms
+18:37:20.525:      ┣OBSBasic::ResetVideo: 242.589 ms
+18:37:20.526:      ┃ ┗obs_init_graphics: 240.852 ms
+18:37:20.526:      ┃   ┗shader compilation: 128.636 ms
+18:37:20.526:      ┣OBSBasic::InitOBSCallbacks: 0.002 ms
+18:37:20.526:      ┣OBSBasic::InitHotkeys: 0.01 ms
+18:37:20.526:      ┣obs_load_all_modules2: 1727.5 ms
+18:37:20.526:      ┃ ┣obs_init_module(decklink-captions.so): 0 ms
+18:37:20.526:      ┃ ┣obs_init_module(decklink-output-ui.so): 0 ms
+18:37:20.526:      ┃ ┣obs_init_module(decklink.so): 0.58 ms
+18:37:20.526:      ┃ ┣obs_init_module(frontend-tools.so): 116.949 ms
+18:37:20.526:      ┃ ┣obs_init_module(image-source.so): 0.004 ms
+18:37:20.526:      ┃ ┣obs_init_module(linux-alsa.so): 0.001 ms
+18:37:20.526:      ┃ ┣obs_init_module(linux-capture.so): 0 ms
+18:37:20.526:      ┃ ┣obs_init_module(linux-jack.so): 0.001 ms
+18:37:20.526:      ┃ ┣obs_init_module(linux-pipewire.so): 4.066 ms
+18:37:20.526:      ┃ ┣obs_init_module(linux-pulseaudio.so): 0.002 ms
+18:37:20.526:      ┃ ┣obs_init_module(linux-v4l2.so): 9.143 ms
+18:37:20.526:      ┃ ┣obs_init_module(obs-ffmpeg.so): 1043.39 ms
+18:37:20.526:      ┃ ┣obs_init_module(obs-filters.so): 0.02 ms
+18:37:20.526:      ┃ ┣obs_init_module(obs-nvenc.so): 234.464 ms
+18:37:20.526:      ┃ ┃ ┗nvenc_check: 234.458 ms
+18:37:20.526:      ┃ ┣obs_init_module(obs-outputs.so): 0.004 ms
+18:37:20.526:      ┃ ┣obs_init_module(obs-transitions.so): 0.007 ms
+18:37:20.526:      ┃ ┣obs_init_module(obs-websocket.so): 13.357 ms
+18:37:20.526:      ┃ ┣obs_init_module(obs-x264.so): 0.001 ms
+18:37:20.526:      ┃ ┣obs_init_module(rtmp-services.so): 5.394 ms
+18:37:20.526:      ┃ ┣obs_init_module(text-freetype2.so): 0.011 ms
+18:37:20.526:      ┃ ┗obs_init_module(vlc-video.so): 17.068 ms
+18:37:20.526:      ┣OBSBasic::InitService: 2.835 ms
+18:37:20.526:      ┣OBSBasic::ResetOutputs: 2.67 ms
+18:37:20.526:      ┣OBSBasic::CreateHotkeys: 0.094 ms
+18:37:20.526:      ┣OBSBasic::InitPrimitives: 0.113 ms
+18:37:20.526:      ┗OBSBasic::Load: 99.708 ms
+18:37:20.526: obs_hotkey_thread(25 ms): min=0 ms, median=0 ms, max=0.005 ms, 99th percentile=0.001 ms, 100% below 25 ms
+18:37:20.526: audio_thread(Audio): min=0.007 ms, median=0.048 ms, max=4.842 ms, 99th percentile=0.272 ms
+18:37:20.526: obs_graphics_thread(16.6667 ms): min=0.078 ms, median=0.457 ms, max=175.45 ms, 99th percentile=7.688 ms, 99.7343% below 16.667 ms
+18:37:20.526:  ┣tick_sources: min=0 ms, median=0.005 ms, max=10.215 ms, 99th percentile=0.011 ms
+18:37:20.526:  ┣output_frame: min=0.038 ms, median=0.189 ms, max=9.763 ms, 99th percentile=1.334 ms
+18:37:20.526:  ┃ ┗gs_context(video->graphics): min=0.038 ms, median=0.189 ms, max=9.763 ms, 99th percentile=1.334 ms
+18:37:20.526:  ┃   ┣render_video: min=0.017 ms, median=0.154 ms, max=9.711 ms, 99th percentile=0.91 ms
+18:37:20.526:  ┃   ┃ ┗render_main_texture: min=0.013 ms, median=0.146 ms, max=9.699 ms, 99th percentile=0.9 ms
+18:37:20.526:  ┃   ┗gs_flush: min=0.005 ms, median=0.008 ms, max=1.737 ms, 99th percentile=0.012 ms
+18:37:20.526:  ┗render_displays: min=0.013 ms, median=0.177 ms, max=170.256 ms, 99th percentile=2.005 ms
+18:37:20.526: =================================================
+18:37:20.526: == Profiler Time Between Calls ==================
+18:37:20.526: obs_hotkey_thread(25 ms): min=25.013 ms, median=25.06 ms, max=25.253 ms, 100% within ±2% of 25 ms (0% lower, 0% higher)
+18:37:20.526: obs_graphics_thread(16.6667 ms): min=2.271 ms, median=16.667 ms, max=175.457 ms, 99.4093% within ±2% of 16.667 ms (0.295334% lower, 0.295334% higher)
+18:37:20.526: =================================================
+18:37:20.529: Number of memory leaks: 0

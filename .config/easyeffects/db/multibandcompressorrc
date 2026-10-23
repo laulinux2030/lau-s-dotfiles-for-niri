@@ -1,0 +1,7 @@
+[soe][MultibandCompressor#0]
+band1Enable=false
+band2Enable=false
+band3Enable=false
+band5Enable=true
+band6Enable=true
+band7Enable=true

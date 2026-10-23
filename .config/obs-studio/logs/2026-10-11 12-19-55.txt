@@ -1,0 +1,384 @@
+12:19:55.098: ================================
+12:19:55.098: Warning: OBS is already running!
+12:19:55.098: ================================
+12:19:55.098: User is now running multiple instances of OBS!
+12:19:55.098: Platform: Wayland
+12:19:55.098: CPU Name: AMD Ryzen 7 5700X 8-Core Processor
+12:19:55.098: CPU Speed: 3604.842MHz
+12:19:55.099: Physical Cores: 8, Logical Cores: 16
+12:19:55.099: Physical Memory: 15383MB Total, 467MB Free
+12:19:55.099: Kernel Version: Linux 7.0.0-38-generic
+12:19:55.099: Distribution: "Ubuntu" "26.04"
+12:19:55.099: Desktop Environment: niri (niri)
+12:19:55.099: Session Type: wayland
+12:19:55.099: Current Date/Time: 2026-10-11, 12:19:55 PM
+12:19:55.099: Browser Hardware Acceleration: true
+12:19:55.099: Qt Version: 6.10.2 (runtime), 6.10.2 (compiled)
+12:19:55.099: Portable mode: false
+12:19:55.115: OBS 32.1.0-0ubuntu3 (linux)
+12:19:55.115: ---------------------------------
+12:19:55.116: ---------------------------------
+12:19:55.116: audio settings reset:
+12:19:55.116: 	samples per sec: 48000
+12:19:55.116: 	speakers:        2
+12:19:55.116: 	max buffering:   960 milliseconds
+12:19:55.116: 	buffering type:  dynamically increasing
+12:19:55.117: ---------------------------------
+12:19:55.117: Initializing OpenGL...
+12:19:55.117: Using EGL/Wayland
+12:19:55.159: Initialized EGL 1.5
+12:19:55.210: Loading up OpenGL on adapter NVIDIA Corporation NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2
+12:19:55.210: OpenGL loaded successfully, version 3.3.0 NVIDIA 615.71.09, shading language 3.30 NVIDIA via Cg compiler
+12:19:55.350: ---------------------------------
+12:19:55.350: video settings reset:
+12:19:55.350: 	base resolution:   1920x1080
+12:19:55.350: 	output resolution: 1920x1080
+12:19:55.350: 	downscale filter:  Bicubic
+12:19:55.350: 	fps:               60/1
+12:19:55.350: 	format:            NV12
+12:19:55.350: 	YUV mode:          Rec. 709/Partial
+12:19:55.351: NV12 texture support enabled
+12:19:55.351: P010 texture support not available
+12:19:55.625: Audio monitoring device:
+12:19:55.625: 	name: Default
+12:19:55.625: 	id: default
+12:19:55.651: ---------------------------------
+12:19:55.657: Failed to load 'en-US' text for module: 'decklink-captions.so'
+12:19:55.662: Failed to load 'en-US' text for module: 'decklink-output-ui.so'
+12:19:55.666: A DeckLink iterator could not be created.  The DeckLink drivers may not be installed
+12:19:55.666: Failed to initialize module 'decklink.so'
+12:19:55.855: [pipewire] Available capture sources:
+12:19:55.855: [pipewire]     - Monitor source
+12:19:55.855: [pipewire]     - Window source
+12:19:55.871: v4l2loopback not installed, virtual camera not registered
+12:19:56.027: LIBVA_DRIVER_NAME variable is set, this could prevent FFmpeg VAAPI from working correctly
+12:19:56.078: VAAPI: Failed to initialize display in vaapi_device_h264_supported
+12:19:56.078: FFmpeg VAAPI H264 encoding not supported
+12:19:56.086: VAAPI: Failed to initialize display in vaapi_device_av1_supported
+12:19:56.086: FFmpeg VAAPI AV1 encoding not supported
+12:19:56.103: VAAPI: Failed to initialize display in vaapi_device_hevc_supported
+12:19:56.103: FFmpeg VAAPI HEVC encoding not supported
+12:19:56.152: [NVENC] Test process failed: no_supported_devices
+12:19:56.152: NVENC not supported
+12:19:56.152: Failed to initialize module 'obs-nvenc.so'
+12:19:56.170: [obs-websocket] [obs_module_load] you can haz websockets (Version: 5.7.2 | RPC Version: 1)
+12:19:56.170: [obs-websocket] [obs_module_load] Qt version (compile-time): 6.10.2 | Qt version (run-time): 6.10.2
+12:19:56.170: [obs-websocket] [obs_module_load] Linked ASIO Version: 103002
+12:19:56.183: [obs-websocket] [obs_module_load] Module loaded.
+12:19:56.205: [vlc-video]: VLC 3.0.23 Vetinari found, VLC video source enabled
+12:19:56.205: ---------------------------------
+12:19:56.205:   Loaded Modules:
+12:19:56.205:     vlc-video.so
+12:19:56.205:     text-freetype2.so
+12:19:56.205:     rtmp-services.so
+12:19:56.205:     obs-x264.so
+12:19:56.205:     obs-websocket.so
+12:19:56.205:     obs-transitions.so
+12:19:56.205:     obs-outputs.so
+12:19:56.205:     obs-filters.so
+12:19:56.205:     obs-ffmpeg.so
+12:19:56.205:     linux-v4l2.so
+12:19:56.205:     linux-pulseaudio.so
+12:19:56.205:     linux-pipewire.so
+12:19:56.205:     linux-jack.so
+12:19:56.205:     linux-capture.so
+12:19:56.205:     linux-alsa.so
+12:19:56.205:     image-source.so
+12:19:56.205:     frontend-tools.so
+12:19:56.205:     decklink-output-ui.so
+12:19:56.205:     decklink-captions.so
+12:19:56.205: ---------------------------------
+12:19:56.207: ---------------------------------
+12:19:56.207: Available Encoders:
+12:19:56.207:   Video Encoders:
+12:19:56.207: 	- ffmpeg_svt_av1 (SVT-AV1)
+12:19:56.207: 	- ffmpeg_aom_av1 (AOM AV1)
+12:19:56.207: 	- obs_x264 (x264)
+12:19:56.207:   Audio Encoders:
+12:19:56.207: 	- ffmpeg_aac (FFmpeg AAC)
+12:19:56.207: 	- ffmpeg_opus (FFmpeg Opus)
+12:19:56.207: 	- ffmpeg_pcm_s16le (FFmpeg PCM (16-bit))
+12:19:56.207: 	- ffmpeg_pcm_s24le (FFmpeg PCM (24-bit))
+12:19:56.207: 	- ffmpeg_pcm_f32le (FFmpeg PCM (32-bit float))
+12:19:56.207: 	- ffmpeg_alac (FFmpeg ALAC (24-bit))
+12:19:56.207: 	- ffmpeg_flac (FFmpeg FLAC (16-bit))
+12:19:56.207: ==== Startup complete ===============================================
+12:19:56.284: All scene data cleared
+12:19:56.284: ------------------------------------------------
+12:19:56.338: Device for 'Audio Output Capture' source Desktop Audio is also used for audio monitoring.
+12:19:56.338: Deduplication logic is being applied to all monitored sources.
+12:19:56.338: pulse-input: Server name: 'PulseAudio (on PipeWire 1.6.2) 15.0.0'
+12:19:56.339: pulse-input: Audio format: s32le, 48000 Hz, 2 channels
+12:19:56.339: pulse-input: Started recording from 'alsa_output.usb-Focusrite_Scarlett_Solo_USB_Y79F7T40853ABE-00.Direct__Direct__sink.monitor' (default)
+12:19:56.342: [Loaded global audio device]: 'Desktop Audio'
+12:19:56.342: pulse-input: Server name: 'PulseAudio (on PipeWire 1.6.2) 15.0.0'
+12:19:56.342: pulse-input: Audio format: s32le, 48000 Hz, 2 channels
+12:19:56.342: pulse-input: Started recording from 'alsa_input.usb-Focusrite_Scarlett_Solo_USB_Y79F7T40853ABE-00.Direct__Direct__source' (default)
+12:19:56.342: [Loaded global audio device]: 'Mic/Aux'
+12:19:56.361: Device for 'Audio Output Capture' source Desktop Audio is also used for audio monitoring.
+12:19:56.361: Deduplication logic is being applied to all monitored sources.
+12:19:56.391: alsa-input: PCM 'default' rate set to 44100
+12:19:56.391: alsa-input: PCM 'default' channels set to 2
+12:19:56.406: PipeWire initialized
+12:19:56.407: Switched to scene 'Scene'
+12:19:56.407: ------------------------------------------------
+12:19:56.407: Loaded scenes:
+12:19:56.407: - scene 'Scene':
+12:19:56.407:     - source: 'Audio Capture Device (ALSA)' (alsa_input_capture)
+12:19:56.407:     - source: 'Screen Capture (PipeWire)' (pipewire-screen-capture-source)
+12:19:56.407: ------------------------------------------------
+12:19:56.426: VolumeMeter(0x580c98d71d50)  does not have a property named  "meterThickness"
+12:19:56.427: VolumeMeter(0x580c98d71d50)  does not have a property named  "meterThickness"
+12:19:56.429: VolumeMeter(0x580c98d523f0)  does not have a property named  "meterThickness"
+12:19:56.430: VolumeMeter(0x580c98d523f0)  does not have a property named  "meterThickness"
+12:19:56.432: VolumeMeter(0x580c98d5ac30)  does not have a property named  "meterThickness"
+12:19:56.433: VolumeMeter(0x580c98d5ac30)  does not have a property named  "meterThickness"
+12:19:56.434: VolumeMeter(0x580c98d71d50)  does not have a property named  "meterThickness"
+12:19:56.435: VolumeMeter(0x580c98d523f0)  does not have a property named  "meterThickness"
+12:19:56.437: VolumeMeter(0x580c98d5ac30)  does not have a property named  "meterThickness"
+12:19:56.460: VolumeMeter(0x580c98d71d50)  does not have a property named  "meterThickness"
+12:19:56.461: VolumeMeter(0x580c98d71d50)  does not have a property named  "meterThickness"
+12:19:56.463: VolumeMeter(0x580c98d523f0)  does not have a property named  "meterThickness"
+12:19:56.464: VolumeMeter(0x580c98d523f0)  does not have a property named  "meterThickness"
+12:19:56.465: VolumeMeter(0x580c98d5ac30)  does not have a property named  "meterThickness"
+12:19:56.466: VolumeMeter(0x580c98d5ac30)  does not have a property named  "meterThickness"
+12:19:56.475: VolumeMeter(0x580c98d71d50)  does not have a property named  "meterThickness"
+12:19:56.476: VolumeMeter(0x580c98d523f0)  does not have a property named  "meterThickness"
+12:19:56.477: VolumeMeter(0x580c98d5ac30)  does not have a property named  "meterThickness"
+12:19:56.478: [pipewire] Screencast session created
+12:19:56.501: [pipewire] Asking for monitor and window
+12:19:56.516: glClear failed, glGetError returned GL_INVALID_FRAMEBUFFER_OPERATION(0x506)
+12:19:56.516: device_clear (GL) failed
+12:19:56.590: [pipewire] source selected, setting up screencast
+12:19:56.594: glDrawArrays failed, glGetError returned GL_INVALID_FRAMEBUFFER_OPERATION(0x506)
+12:19:56.594: device_draw (GL) failed
+12:19:56.594: eglSwapBuffers failed
+12:19:56.595: [pipewire] Server version: 1.6.2
+12:19:56.595: [pipewire] Library version: 1.6.2
+12:19:56.595: [pipewire] Header version: 1.6.2
+12:19:56.616: glClear failed, glGetError returned GL_INVALID_FRAMEBUFFER_OPERATION(0x506)
+12:19:56.616: device_clear (GL) failed
+12:19:56.616: glDrawArrays failed, glGetError returned GL_INVALID_FRAMEBUFFER_OPERATION(0x506)
+12:19:56.616: device_draw (GL) failed
+12:19:56.616: eglSwapBuffers failed
+12:19:56.634: glClear failed, glGetError returned GL_INVALID_FRAMEBUFFER_OPERATION(0x506)
+12:19:56.634: device_clear (GL) failed
+12:19:56.634: glDrawArrays failed, glGetError returned GL_INVALID_FRAMEBUFFER_OPERATION(0x506)
+12:19:56.634: device_draw (GL) failed
+12:19:56.634: eglSwapBuffers failed
+12:19:56.653: glClear failed, glGetError returned GL_INVALID_FRAMEBUFFER_OPERATION(0x506)
+12:19:56.653: device_clear (GL) failed
+12:19:56.653: glDrawArrays failed, glGetError returned GL_INVALID_FRAMEBUFFER_OPERATION(0x506)
+12:19:56.653: device_draw (GL) failed
+12:19:56.653: eglSwapBuffers failed
+12:19:56.653: [pipewire] Created stream 0x580c9904f580
+12:19:56.653: [pipewire] Stream 0x580c9904f580 state: "connecting" (error: none)
+12:19:56.653: [pipewire] Playing stream 0x580c9904f580
+12:19:56.654: [pipewire] Stream 0x580c9904f580 state: "paused" (error: none)
+12:19:56.675: glClear failed, glGetError returned GL_INVALID_FRAMEBUFFER_OPERATION(0x506)
+12:19:56.675: device_clear (GL) failed
+12:19:56.675: glDrawArrays failed, glGetError returned GL_INVALID_FRAMEBUFFER_OPERATION(0x506)
+12:19:56.675: device_draw (GL) failed
+12:19:56.675: eglSwapBuffers failed
+12:19:56.693: glClear failed, glGetError returned GL_INVALID_FRAMEBUFFER_OPERATION(0x506)
+12:19:56.693: device_clear (GL) failed
+12:19:56.693: glDrawArrays failed, glGetError returned GL_INVALID_FRAMEBUFFER_OPERATION(0x506)
+12:19:56.693: device_draw (GL) failed
+12:19:56.693: eglSwapBuffers failed
+12:19:56.712: glClear failed, glGetError returned GL_INVALID_FRAMEBUFFER_OPERATION(0x506)
+12:19:56.712: device_clear (GL) failed
+12:19:56.712: glDrawArrays failed, glGetError returned GL_INVALID_FRAMEBUFFER_OPERATION(0x506)
+12:19:56.712: device_draw (GL) failed
+12:19:56.712: eglSwapBuffers failed
+12:19:56.729: [pipewire] Negotiated format:
+12:19:56.729: [pipewire]     Format: 8 (Spa:Enum:VideoFormat:BGRx)
+12:19:56.729: [pipewire]     Modifier: 0x0
+12:19:56.729: [pipewire]     Size: 2560x1440
+12:19:56.729: [pipewire]     Framerate: 0/1
+12:19:56.747: glClear failed, glGetError returned GL_INVALID_FRAMEBUFFER_OPERATION(0x506)
+12:19:56.747: device_clear (GL) failed
+12:19:56.747: glDrawArrays failed, glGetError returned GL_INVALID_FRAMEBUFFER_OPERATION(0x506)
+12:19:56.747: device_draw (GL) failed
+12:19:56.747: eglSwapBuffers failed
+12:19:56.747: [pipewire] Negotiated format:
+12:19:56.747: [pipewire]     Format: 8 (Spa:Enum:VideoFormat:BGRx)
+12:19:56.747: [pipewire]     Modifier: 0x300000000e08014
+12:19:56.747: [pipewire]     Size: 2560x1440
+12:19:56.747: [pipewire]     Framerate: 0/1
+12:19:56.768: glClear failed, glGetError returned GL_INVALID_FRAMEBUFFER_OPERATION(0x506)
+12:19:56.768: device_clear (GL) failed
+12:19:56.768: glDrawArrays failed, glGetError returned GL_INVALID_FRAMEBUFFER_OPERATION(0x506)
+12:19:56.768: [pipewire] Stream 0x580c9904f580 state: "streaming" (error: none)
+12:19:56.768: device_draw (GL) failed
+12:19:56.768: eglSwapBuffers failed
+12:19:56.787: glClear failed, glGetError returned GL_INVALID_FRAMEBUFFER_OPERATION(0x506)
+12:19:56.787: device_clear (GL) failed
+12:19:56.787: glDrawArrays failed, glGetError returned GL_INVALID_FRAMEBUFFER_OPERATION(0x506)
+12:19:56.787: device_draw (GL) failed
+12:19:56.787: eglSwapBuffers failed
+12:19:56.809: glClear failed, glGetError returned GL_INVALID_FRAMEBUFFER_OPERATION(0x506)
+12:19:56.809: device_clear (GL) failed
+12:19:56.809: glDrawArrays failed, glGetError returned GL_INVALID_FRAMEBUFFER_OPERATION(0x506)
+12:19:56.809: device_draw (GL) failed
+12:19:56.809: eglSwapBuffers failed
+12:19:56.831: glClear failed, glGetError returned GL_INVALID_FRAMEBUFFER_OPERATION(0x506)
+12:19:56.831: device_clear (GL) failed
+12:19:56.831: glDrawArrays failed, glGetError returned GL_INVALID_FRAMEBUFFER_OPERATION(0x506)
+12:19:56.831: device_draw (GL) failed
+12:19:56.831: eglSwapBuffers failed
+12:19:56.854: glClear failed, glGetError returned GL_INVALID_FRAMEBUFFER_OPERATION(0x506)
+12:19:56.854: device_clear (GL) failed
+12:19:56.854: glDrawArrays failed, glGetError returned GL_INVALID_FRAMEBUFFER_OPERATION(0x506)
+12:19:56.854: device_draw (GL) failed
+12:19:56.854: eglSwapBuffers failed
+12:19:56.874: glClear failed, glGetError returned GL_INVALID_FRAMEBUFFER_OPERATION(0x506)
+12:19:56.874: device_clear (GL) failed
+12:19:56.874: glDrawArrays failed, glGetError returned GL_INVALID_FRAMEBUFFER_OPERATION(0x506)
+12:19:56.874: device_draw (GL) failed
+12:19:56.874: eglSwapBuffers failed
+12:19:56.894: adding 21 milliseconds of audio buffering, total audio buffering is now 21 milliseconds (source: Desktop Audio)
+12:19:56.894: glClear failed, glGetError returned GL_INVALID_FRAMEBUFFER_OPERATION(0x506)
+12:19:56.894: 
+12:19:56.894: device_clear (GL) failed
+12:19:56.894: glDrawArrays failed, glGetError returned GL_INVALID_FRAMEBUFFER_OPERATION(0x506)
+12:19:56.894: device_draw (GL) failed
+12:19:56.894: eglSwapBuffers failed
+12:19:56.913: glClear failed, glGetError returned GL_INVALID_FRAMEBUFFER_OPERATION(0x506)
+12:19:56.913: device_clear (GL) failed
+12:19:56.913: glDrawArrays failed, glGetError returned GL_INVALID_FRAMEBUFFER_OPERATION(0x506)
+12:19:56.913: device_draw (GL) failed
+12:19:56.913: eglSwapBuffers failed
+12:19:56.932: glClear failed, glGetError returned GL_INVALID_FRAMEBUFFER_OPERATION(0x506)
+12:19:56.932: device_clear (GL) failed
+12:19:56.933: glDrawArrays failed, glGetError returned GL_INVALID_FRAMEBUFFER_OPERATION(0x506)
+12:19:56.933: device_draw (GL) failed
+12:19:56.933: eglSwapBuffers failed
+12:19:58.237: glClear failed, glGetError returned GL_INVALID_FRAMEBUFFER_OPERATION(0x506)
+12:19:58.237: device_clear (GL) failed
+12:19:58.237: glDrawArrays failed, glGetError returned GL_INVALID_FRAMEBUFFER_OPERATION(0x506)
+12:19:58.237: device_draw (GL) failed
+12:19:58.237: eglSwapBuffers failed
+12:19:59.496: glClear failed, glGetError returned GL_INVALID_FRAMEBUFFER_OPERATION(0x506)
+12:19:59.496: device_clear (GL) failed
+12:19:59.496: glDrawArrays failed, glGetError returned GL_INVALID_FRAMEBUFFER_OPERATION(0x506)
+12:19:59.496: device_draw (GL) failed
+12:19:59.498: glDrawArrays failed, glGetError returned GL_INVALID_FRAMEBUFFER_OPERATION(0x506)
+12:19:59.498: device_draw (GL) failed
+12:19:59.498: glDrawArrays failed, glGetError returned GL_INVALID_FRAMEBUFFER_OPERATION(0x506)
+12:19:59.498: device_draw (GL) failed
+12:19:59.498: glDrawArrays failed, glGetError returned GL_INVALID_FRAMEBUFFER_OPERATION(0x506)
+12:19:59.498: device_draw (GL) failed
+12:19:59.498: glDrawArrays failed, glGetError returned GL_INVALID_FRAMEBUFFER_OPERATION(0x506)
+12:19:59.498: device_draw (GL) failed
+12:19:59.498: eglSwapBuffers failed
+12:20:00.757: glClear failed, glGetError returned GL_INVALID_FRAMEBUFFER_OPERATION(0x506)
+12:20:00.758: device_clear (GL) failed
+12:20:00.760: glDrawArrays failed, glGetError returned GL_INVALID_FRAMEBUFFER_OPERATION(0x506)
+12:20:00.760: device_draw (GL) failed
+12:20:00.760: glDrawArrays failed, glGetError returned GL_INVALID_FRAMEBUFFER_OPERATION(0x506)
+12:20:00.760: device_draw (GL) failed
+12:20:00.760: glDrawArrays failed, glGetError returned GL_INVALID_FRAMEBUFFER_OPERATION(0x506)
+12:20:00.760: device_draw (GL) failed
+12:20:00.760: glDrawArrays failed, glGetError returned GL_INVALID_FRAMEBUFFER_OPERATION(0x506)
+12:20:00.760: device_draw (GL) failed
+12:20:00.760: glDrawArrays failed, glGetError returned GL_INVALID_FRAMEBUFFER_OPERATION(0x506)
+12:20:00.760: device_draw (GL) failed
+12:20:00.760: glDrawArrays failed, glGetError returned GL_INVALID_FRAMEBUFFER_OPERATION(0x506)
+12:20:00.760: device_draw (GL) failed
+12:20:00.760: glDrawArrays failed, glGetError returned GL_INVALID_FRAMEBUFFER_OPERATION(0x506)
+12:20:00.760: device_draw (GL) failed
+12:20:00.760: glDrawArrays failed, glGetError returned GL_INVALID_FRAMEBUFFER_OPERATION(0x506)
+12:20:00.760: device_draw (GL) failed
+12:20:00.760: glDrawArrays failed, glGetError returned GL_INVALID_FRAMEBUFFER_OPERATION(0x506)
+12:20:00.760: device_draw (GL) failed
+12:20:00.760: glDrawArrays failed, glGetError returned GL_INVALID_FRAMEBUFFER_OPERATION(0x506)
+12:20:00.760: device_draw (GL) failed
+12:20:00.760: glDrawArrays failed, glGetError returned GL_INVALID_FRAMEBUFFER_OPERATION(0x506)
+12:20:00.760: device_draw (GL) failed
+12:20:00.760: glDrawArrays failed, glGetError returned GL_INVALID_FRAMEBUFFER_OPERATION(0x506)
+12:20:00.760: device_draw (GL) failed
+12:20:00.760: glDrawArrays failed, glGetError returned GL_INVALID_FRAMEBUFFER_OPERATION(0x506)
+12:20:00.760: device_draw (GL) failed
+12:20:00.760: glDrawArrays failed, glGetError returned GL_INVALID_FRAMEBUFFER_OPERATION(0x506)
+12:20:00.760: device_draw (GL) failed
+12:20:00.760: glBufferData failed, glGetError returned GL_OUT_OF_MEMORY(0x505)
+12:20:00.760: device_vertexbuffer_create (GL) failed
+12:20:00.760: glDrawArrays failed, glGetError returned GL_INVALID_FRAMEBUFFER_OPERATION(0x506)
+12:20:00.760: device_draw (GL) failed
+12:20:00.760: No vertex buffer specified
+12:20:00.760: device_draw (GL) failed
+12:20:00.761: eglSwapBuffers failed
+12:20:01.678: ==== Shutting down ==================================================
+12:20:02.371: pulse-input: Stopped recording from 'alsa_output.usb-Focusrite_Scarlett_Solo_USB_Y79F7T40853ABE-00.Direct__Direct__sink.monitor'
+12:20:02.371: pulse-input: Got 241 packets with 289200 frames
+12:20:02.372: Deduplication logic stopped.
+12:20:02.427: pulse-input: Stopped recording from 'alsa_input.usb-Focusrite_Scarlett_Solo_USB_Y79F7T40853ABE-00.Direct__Direct__source'
+12:20:02.427: pulse-input: Got 243 packets with 291600 frames
+12:20:02.589: [pipewire] Stream 0x580c9904f580 state: "paused" (error: none)
+12:20:02.601: [pipewire] Stream 0x580c9904f580 state: "unconnected" (error: none)
+12:20:02.681: All scene data cleared
+12:20:02.681: ------------------------------------------------
+12:20:02.724: Tried to call obs_frontend_remove_event_callback with no callbacks!
+12:20:04.298: [obs-websocket] [obs_module_unload] Shutting down...
+12:20:04.300: Tried to call obs_frontend_remove_event_callback with no callbacks!
+12:20:04.300: [obs-websocket] [obs_module_unload] Finished shutting down.
+12:20:04.305: [Scripting] Total detached callbacks: 0
+12:20:04.305: Freeing OBS context data
+12:20:04.312: == Profiler Results =============================
+12:20:04.312: run_program_init: 4104.45 ms
+12:20:04.312:  ┣OBSApp::AppInit: 15.432 ms
+12:20:04.312:  ┃ ┗OBSApp::InitLocale: 0.616 ms
+12:20:04.312:  ┗OBSApp::OBSInit: 1371.1 ms
+12:20:04.312:    ┣obs_startup: 1.013 ms
+12:20:04.312:    ┗OBSBasic::OBSInit: 1354.07 ms
+12:20:04.312:      ┣OBSBasic::InitBasicConfig: 0.514 ms
+12:20:04.312:      ┣OBSBasic::ResetAudio: 0.238 ms
+12:20:04.312:      ┣OBSBasic::ResetVideo: 508.705 ms
+12:20:04.312:      ┃ ┗obs_init_graphics: 233.994 ms
+12:20:04.312:      ┃   ┗shader compilation: 139.351 ms
+12:20:04.312:      ┣OBSBasic::InitOBSCallbacks: 0.006 ms
+12:20:04.312:      ┣OBSBasic::InitHotkeys: 0.028 ms
+12:20:04.312:      ┣obs_load_all_modules2: 553.239 ms
+12:20:04.312:      ┃ ┣obs_init_module(decklink-captions.so): 0 ms
+12:20:04.312:      ┃ ┣obs_init_module(decklink-output-ui.so): 0 ms
+12:20:04.312:      ┃ ┣obs_init_module(decklink.so): 0.086 ms
+12:20:04.312:      ┃ ┣obs_init_module(frontend-tools.so): 88.423 ms
+12:20:04.312:      ┃ ┣obs_init_module(image-source.so): 0.004 ms
+12:20:04.312:      ┃ ┣obs_init_module(linux-alsa.so): 0.001 ms
+12:20:04.312:      ┃ ┣obs_init_module(linux-capture.so): 0 ms
+12:20:04.312:      ┃ ┣obs_init_module(linux-jack.so): 0.001 ms
+12:20:04.312:      ┃ ┣obs_init_module(linux-pipewire.so): 68.54 ms
+12:20:04.312:      ┃ ┣obs_init_module(linux-pulseaudio.so): 0.001 ms
+12:20:04.312:      ┃ ┣obs_init_module(linux-v4l2.so): 8.03 ms
+12:20:04.312:      ┃ ┣obs_init_module(obs-ffmpeg.so): 77.575 ms
+12:20:04.312:      ┃ ┣obs_init_module(obs-filters.so): 0.02 ms
+12:20:04.312:      ┃ ┣obs_init_module(obs-nvenc.so): 38.702 ms
+12:20:04.312:      ┃ ┃ ┗nvenc_check: 38.686 ms
+12:20:04.312:      ┃ ┣obs_init_module(obs-outputs.so): 0.003 ms
+12:20:04.312:      ┃ ┣obs_init_module(obs-transitions.so): 0.005 ms
+12:20:04.312:      ┃ ┣obs_init_module(obs-websocket.so): 12.851 ms
+12:20:04.312:      ┃ ┣obs_init_module(obs-x264.so): 0.001 ms
+12:20:04.312:      ┃ ┣obs_init_module(rtmp-services.so): 4.893 ms
+12:20:04.312:      ┃ ┣obs_init_module(text-freetype2.so): 0.01 ms
+12:20:04.312:      ┃ ┗obs_init_module(vlc-video.so): 4.603 ms
+12:20:04.312:      ┣OBSBasic::InitService: 3.16 ms
+12:20:04.312:      ┣OBSBasic::ResetOutputs: 1.316 ms
+12:20:04.312:      ┣OBSBasic::CreateHotkeys: 0.106 ms
+12:20:04.312:      ┣OBSBasic::InitPrimitives: 31.553 ms
+12:20:04.312:      ┗OBSBasic::Load: 163.59 ms
+12:20:04.312: obs_hotkey_thread(25 ms): min=0 ms, median=0 ms, max=0.001 ms, 99th percentile=0.001 ms, 100% below 25 ms
+12:20:04.312: audio_thread(Audio): min=0.002 ms, median=0.019 ms, max=1304.69 ms, 99th percentile=38.243 ms
+12:20:04.312: obs_graphics_thread(16.6667 ms): min=17.425 ms, median=18.915 ms, max=1334.46 ms, 99th percentile=1304.18 ms, 0% below 16.667 ms
+12:20:04.312:  ┣tick_sources: min=0 ms, median=0.002 ms, max=22.911 ms, 99th percentile=12.737 ms
+12:20:04.312:  ┣output_frame: min=17.398 ms, median=18.756 ms, max=1311.5 ms, 99th percentile=1303.96 ms
+12:20:04.312:  ┃ ┗gs_context(video->graphics): min=17.397 ms, median=18.755 ms, max=1311.5 ms, 99th percentile=1303.95 ms
+12:20:04.312:  ┃   ┣render_video: min=17.381 ms, median=18.665 ms, max=1311.47 ms, 99th percentile=1303.66 ms
+12:20:04.312:  ┃   ┃ ┗render_main_texture: min=17.375 ms, median=18.653 ms, max=1311.46 ms, 99th percentile=1303.65 ms
+12:20:04.312:  ┃   ┗gs_flush: min=0 ms, median=0 ms, max=0.002 ms, 99th percentile=0.001 ms
+12:20:04.312:  ┗render_displays: min=0.015 ms, median=0.022 ms, max=78.565 ms, 99th percentile=3.485 ms
+12:20:04.312: =================================================
+12:20:04.312: == Profiler Time Between Calls ==================
+12:20:04.312: obs_hotkey_thread(25 ms): min=25.014 ms, median=25.06 ms, max=25.089 ms, 100% within ±2% of 25 ms (0% lower, 0% higher)
+12:20:04.312: obs_graphics_thread(16.6667 ms): min=17.427 ms, median=18.94 ms, max=1334.47 ms, 0% within ±2% of 16.667 ms (0% lower, 100% higher)
+12:20:04.312: =================================================
+12:20:04.314: Number of memory leaks: 0

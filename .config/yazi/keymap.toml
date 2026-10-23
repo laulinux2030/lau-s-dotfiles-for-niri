@@ -1,0 +1,9 @@
+[[mgr.prepend_keymap]]
+on = "T"
+run = 'shell --orphan -- ghostty --working-directory="$PWD" -e bash'
+desc = "Open CWD in Ghostty (bash)"
+
+[[mgr.prepend_keymap]]
+on = "<S-Enter>"
+run = 'shell --orphan -- ghostty -e nvim %s'
+desc = "Edit in new NVIM window"

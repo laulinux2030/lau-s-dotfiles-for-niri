@@ -1,0 +1,34 @@
+[opener]
+mpv = [
+  { run = 'mpv %s', desc = "Play with mpv", orphan = true, for = "unix" },
+]
+swayimg = [
+  { run = 'swayimg %s', desc = "Open with swayimg", orphan = true, for = "unix" },
+]
+zen = [
+  { run = 'zen %s', desc = "Open with Zen-Browser", orphan = true, for = "unix" },
+]
+edit = [
+    { run = 'nvim %s', block = true, spread = true, desc = "nvim", for = "unix" },
+]
+
+[open]
+prepend_rules = [
+  # Videos -> mpv
+  { mime = "video/*", use = "mpv" },
+
+  # GIFs -> mpv (before the general image/* rule, so this takes priority)
+  { mime = "image/gif", use = "mpv" },
+  { url = "*.gif", use = "mpv" },
+  { url = "*.GIF", use = "mpv" },
+
+  # Everything else images -> swayimg
+  { mime = "image/*", use = "swayimg" },
+
+  # PDFs -> Firefox
+  { mime = "application/pdf", use = "zen" },
+  { url = "*.pdf", use = "zen" },
+  { url = "*.PDF", use = "zen" },
+
+  { mime = "text/*", use = "edit" },
+]

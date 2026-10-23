@@ -1,0 +1,29 @@
+12:19:20.398: Platform: Wayland
+12:19:20.399: CPU Name: AMD Ryzen 7 5700X 8-Core Processor
+12:19:20.399: CPU Speed: 3719.611MHz
+12:19:20.399: Physical Cores: 8, Logical Cores: 16
+12:19:20.399: Physical Memory: 15383MB Total, 526MB Free
+12:19:20.399: Kernel Version: Linux 7.0.0-38-generic
+12:19:20.399: Distribution: "Ubuntu" "26.04"
+12:19:20.399: Desktop Environment: niri (niri)
+12:19:20.399: Session Type: wayland
+12:19:20.402: Current Date/Time: 2026-10-11, 12:19:20 PM
+12:19:20.402: Browser Hardware Acceleration: true
+12:19:20.402: Qt Version: 6.10.2 (runtime), 6.10.2 (compiled)
+12:19:20.402: Portable mode: false
+12:19:20.489: OBS 32.1.0-0ubuntu3 (linux)
+12:19:20.489: ---------------------------------
+12:19:20.495: ---------------------------------
+12:19:20.495: audio settings reset:
+12:19:20.495: 	samples per sec: 48000
+12:19:20.495: 	speakers:        2
+12:19:20.495: 	max buffering:   960 milliseconds
+12:19:20.495: 	buffering type:  dynamically increasing
+12:19:20.496: ---------------------------------
+12:19:20.496: Initializing OpenGL...
+12:19:20.496: Using EGL/Wayland
+12:19:20.541: Initialized EGL 1.5
+12:19:20.641: Loading up OpenGL on adapter NVIDIA Corporation NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2
+12:19:20.641: OpenGL loaded successfully, version 3.3.0 NVIDIA 615.71.09, shading language 3.30 NVIDIA via Cg compiler
+12:19:20.641: glBufferData failed, glGetError returned GL_OUT_OF_MEMORY(0x505)
+12:19:20.641: device_vertexbuffer_create (GL) failed

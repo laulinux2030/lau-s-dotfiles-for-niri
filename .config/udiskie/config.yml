@@ -1,0 +1,6 @@
+notifications:
+  timeout: 5
+  device_added: true
+  device_unmounted: false
+  device_mounted: false
+  device_removed: false

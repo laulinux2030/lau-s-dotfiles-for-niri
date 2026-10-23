@@ -1,0 +1,73 @@
+[config]
+reload_apps = true
+
+[templates.rofi]
+input_path = '/home/lau/.config/matugen/templates/rofi-colors.rasi'
+output_path = '/home/lau/.config/rofi/colors.rasi'
+
+[templates.niri]
+input_path = '/home/lau/.config/matugen/templates/niri-colors.kdl'
+output_path = '/home/lau/.config/niri/colors.kdl'
+post_hook = 'niri msg action load-config-file'
+
+[templates.starship]
+input_path = '/home/lau/.config/matugen/templates/starship.toml'
+output_path = '/home/lau/.config/starship.toml'
+
+[templates.fastfetch]
+input_path = '~/.config/matugen/templates/fastfetch.jsonc'
+output_path = '~/.config/fastfetch/config.jsonc'
+
+[templates.swaylock]
+input_path = '/home/lau/.config/matugen/templates/swaylock.conf'
+output_path = '/home/lau/.config/swaylock/config'
+
+[templates.vscode-raw]
+input_path = "./templates/vscode-colors"
+output_path = "~/.cache/matugen/vscode-colors"
+
+[templates.vscode-json]
+input_path = "./templates/vscode-colors.json"
+output_path = "~/.cache/matugen/vscode-colors.json"
+
+[templates.waybar]
+input_path = "~/.config/matugen/templates/waybar.css"
+output_path = "~/.config/waybar/colors.css"
+
+[templates.btop]
+input_path = "~/.config/matugen/templates/btop.theme"
+output_path = "~/.config/btop/themes/matugen.theme"
+
+[templates.yazi]
+input_path = '~/.config/matugen/templates/yazi-theme.toml'
+output_path = '~/.config/yazi/theme.toml'
+
+[templates.ghostty]
+input_path = '~/.config/matugen/templates/ghostty-colors'
+output_path = '~/.config/ghostty/themes/matugen'
+
+[templates.croft]
+input_path = '~/.config/matugen/templates/croft-theme.json'
+output_path = '~/.config/croft/matugen-theme.json'
+
+[templates.neovim]
+input_path = '~/.config/matugen/templates/neovim.lua'
+output_path = '~/.config/nvim/lua/plugins/matugen-theme.lua'
+
+[templates.gtk4]
+input_path = '~/.config/matugen/templates/gtk.css'
+output_path = '~/.config/gtk-4.0/gtk.css'
+
+[templates.gtk3]
+input_path = '~/.config/matugen/templates/gtk.css'
+output_path = '~/.config/gtk-3.0/gtk.css'
+
+[templates.spotify]
+input_path = '~/.config/matugen/templates/spicetify.ini'
+output_path = '~/.config/spicetify/Themes/text/color.ini'
+post_hook = 'spicetify apply'
+
+[templates.mako]
+input_path = '~/.config/matugen/templates/mako'
+output_path = '~/.config/mako/config'
+post_hook = 'makoctl reload'

@@ -1,0 +1,124 @@
+{
+ "reload_style_on_change": true,
+  "layer": "top",
+  "position": "bottom",
+  "spacing": 4,
+  "height": 36,
+  "border-radius": 0,
+  "margin-right": 10,
+  "margin-left": 10,
+  "margin-top": -26,
+  "modules-left": [],
+  "modules-center": ["custom/drun","custom/media","custom/sunshine","custom/weather","custom/wallpaper", "clock", "memory", "network","custom/cliphist", "pulseaudio", "custom/mount", "custom/hdr" , "custom/power"],
+  "modules-right": [],
+
+  // MODULES
+
+  "memory": {
+    "interval": 2,
+    "format": "{icon} {percentage}%",
+    "format-icons": ["󰪞", "󰪟", "󰪠", "󰪡", "󰪢", "󰪣", "󰪤", "󰪥"],
+    "on-click": "ghostty -e btop"
+  },
+
+  "clock": {
+    "format": "{:%H:%M • %a, %d/%m}",
+    "format-alt": "{:%A, %d %B %Y}",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+  },
+
+  "custom/mount": {
+    "exec": "~/.config/waybar/mount.sh",
+    "interval": 2,
+    "return-type": "json",
+    "on-click": "~/.config/rofi/scripts/mountalt.sh"
+  },
+  
+  "custom/weather": {
+    "exec": "~/.config/waybar/weather.sh",
+    "interval": 600,
+    "return-type": "json",
+    "on-click": "ghostty -e linecast weather",
+    "tooltip": true
+  },
+
+  "network": {
+	"format-icons": ["󰤯 ", "󰤟 ", "󰤢 ", "󰤥 ", "󰤨 "],
+	"format": "{icon}",
+	"format-wifi": "{icon}{essid}",
+	"format-ethernet": "<span size='11500'>󰈀 </span>{ifname}",
+	"format-disconnected": "<span size='11500'>󰤮 </span>HRO",
+	"tooltip-format-wifi": "{essid} ({frequency} GHz)\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
+	"tooltip-format-ethernet": "⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
+	"tooltip-format-disconnected": "Disconnected",
+	"on-click": "ghostty -e sh -c 'speedtest-cli; echo \"\nPress Enter to exit...\"; read _'",
+	"interval": 3,
+	"spacing": 1
+  },
+
+  "custom/media": {
+    "exec": "~/.config/waybar/mediaplayer.sh",
+    "interval": 0.1,
+    "on-click": "playerctl play-pause",
+    "on-click-right": "ghostty -e myx",
+    "return-type": "json"
+  },
+
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-muted": "󰝟 Muted",
+    "format-icons": {
+      "default": ["󰕿", "󰖀", "󰕾"]
+    },
+    "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+    "on-click-right": "pavucontrol"
+  },
+
+  "custom/hdr": {
+    "exec": "~/.config/niri/hdr_lum.sh get",
+    "interval": "once",
+    "signal": 1,
+    "return-type": "json",
+    "on-scroll-up": "~/.config/niri/hdr_lum.sh up && pkill -RTMIN+1 waybar",
+    "on-scroll-down": "~/.config/niri/hdr_lum.sh down && pkill -RTMIN+1 waybar",
+    "on-click": "ghostty -e yazi ~/.config/",
+    "tooltip": true
+  },
+
+  "custom/power": {
+    "format": "󰐥",
+    "tooltip": false,
+    "on-click": "~/.config/rofi/scripts/rofi-power.sh"
+  },
+
+  "custom/sunshine": {
+    "format": "",
+    "exec-if": "pgrep sunshine",
+    "exec": "echo '{\"text\": \"\", \"tooltip\": \"Sunshine is active\"}'",
+    "return-type": "json",
+    "interval": 0.3,
+    "on-click": "systemctl --user stop sunshine"
+  },
+
+  "custom/wallpaper": {
+    "exec": "~/.config/waybar/wallpaper_status.sh",
+    "on-click": "~/.config/rofi/scripts/wallpaper_selector_mpv.sh",
+    "return-type": "json",
+    "interval": 5,
+    "format": "{}",
+    "tooltip": true
+  },
+
+  "custom/cliphist": {
+    "format": "󰅍 clip",
+    "on-click": "/home/lau/.config/rofi/scripts/cliphist.sh",
+    "tooltip": false
+  },
+
+  "custom/drun": {
+    "interval": 0.3,
+    "format": "󰀻 drun",
+    "tooltip": false,
+    "on-click": "~/.config/rofi/scripts/drun.sh"
+  },
+}

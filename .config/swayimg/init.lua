@@ -1,0 +1,1 @@
+swayimg.viewer.set_window_background(0x00000000)

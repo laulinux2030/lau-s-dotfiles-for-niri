@@ -1,0 +1,280 @@
+border_active = "{{colors.primary.default.hex}}"
+border_inactive = "{{colors.outline_variant.default.hex}}"
+highlight_bg = "reset"
+text_primary = "{{colors.on_background.default.hex}}"
+accent_color = "{{colors.primary.default.hex}}"
+show_ascii_art = false
+background = "reset"
+text_secondary = "{{colors.on_surface_variant.default.hex}}"
+status_bar = "reset"
+highlight_symbol = "> "
+options_panel_symbol = "▶ "
+background_panel = "reset"
+background_element = "reset"
+border_subtle = "{{colors.outline_variant.default.hex}}"
+border_dimmest = "{{colors.surface_variant.default.hex}}"
+primary = "{{colors.primary.default.hex}}"
+success = "#a6e3a1"
+error = "{{colors.error.default.hex}}"
+warning = "#fab387"
+info = "{{colors.primary.default.hex}}"
+reactive_theme = false
+reactive_cross_fade_ms = 800
+ 
+[widget_styles]
+ 
+[layout_tree]
+direction = "vertical"
+ 
+[[layout_tree.constraints]]
+length = 1
+ 
+[[layout_tree.constraints]]
+fill = 1
+ 
+[[layout_tree.constraints]]
+length = 1
+ 
+[[layout_tree.children]]
+widget = "search"
+ 
+[[layout_tree.children]]
+direction = "horizontal"
+ 
+[[layout_tree.children.constraints]]
+percentage = 20
+ 
+[[layout_tree.children.constraints]]
+fill = 1
+ 
+[[layout_tree.children.constraints]]
+percentage = 28
+ 
+[[layout_tree.children.children]]
+direction = "vertical"
+ 
+[[layout_tree.children.children.constraints]]
+length = 7
+ 
+[[layout_tree.children.children.constraints]]
+fill = 1
+ 
+[[layout_tree.children.children.children]]
+widget = "library"
+ 
+[[layout_tree.children.children.children]]
+widget = "playlists"
+ 
+[[layout_tree.children.children]]
+direction = "vertical"
+ 
+[[layout_tree.children.children.constraints]]
+percentage = 65
+ 
+[[layout_tree.children.children.constraints]]
+length = 3
+ 
+[[layout_tree.children.children.constraints]]
+fill = 1
+ 
+[[layout_tree.children.children.children]]
+widget = "album_art_with_info"
+ 
+[[layout_tree.children.children.children]]
+widget = "lyrics"
+ 
+[[layout_tree.children.children.children]]
+widget = "visualizer"
+ 
+[[layout_tree.children.children]]
+direction = "vertical"
+ 
+[[layout_tree.children.children.constraints]]
+fill = 1
+ 
+[[layout_tree.children.children.constraints]]
+length = 8
+ 
+[[layout_tree.children.children.children]]
+widget = "main_content"
+ 
+[[layout_tree.children.children.children]]
+widget = "queue"
+ 
+[[layout_tree.children]]
+direction = "horizontal"
+ 
+[[layout_tree.children.constraints]]
+percentage = 30
+ 
+[[layout_tree.children.constraints]]
+fill = 1
+ 
+[[layout_tree.children.children]]
+widget = "marquee"
+ 
+[[layout_tree.children.children]]
+widget = "progress"
+ 
+[compact_layout]
+direction = "vertical"
+ 
+[[compact_layout.constraints]]
+length = 1
+ 
+[[compact_layout.constraints]]
+fill = 1
+ 
+[[compact_layout.constraints]]
+length = 1
+ 
+[[compact_layout.children]]
+widget = "search"
+ 
+[[compact_layout.children]]
+direction = "horizontal"
+ 
+[[compact_layout.children.constraints]]
+percentage = 20
+ 
+[[compact_layout.children.constraints]]
+fill = 1
+ 
+[[compact_layout.children.constraints]]
+percentage = 28
+ 
+[[compact_layout.children.children]]
+direction = "vertical"
+ 
+[[compact_layout.children.children.constraints]]
+length = 7
+ 
+[[compact_layout.children.children.constraints]]
+fill = 1
+ 
+[[compact_layout.children.children.children]]
+widget = "library"
+ 
+[[compact_layout.children.children.children]]
+widget = "playlists"
+ 
+[[compact_layout.children.children]]
+direction = "vertical"
+ 
+[[compact_layout.children.children.constraints]]
+percentage = 65
+ 
+[[compact_layout.children.children.constraints]]
+length = 3
+ 
+[[compact_layout.children.children.constraints]]
+fill = 1
+ 
+[[compact_layout.children.children.children]]
+widget = "album_art_with_info"
+ 
+[[compact_layout.children.children.children]]
+widget = "lyrics"
+ 
+[[compact_layout.children.children.children]]
+widget = "visualizer"
+ 
+[[compact_layout.children.children]]
+direction = "vertical"
+ 
+[[compact_layout.children.children.constraints]]
+fill = 1
+ 
+[[compact_layout.children.children.constraints]]
+length = 8
+ 
+[[compact_layout.children.children.children]]
+widget = "main_content"
+ 
+[[compact_layout.children.children.children]]
+widget = "queue"
+ 
+[[compact_layout.children]]
+direction = "horizontal"
+ 
+[[compact_layout.children.constraints]]
+percentage = 30
+ 
+[[compact_layout.children.constraints]]
+fill = 1
+ 
+[[compact_layout.children.children]]
+widget = "marquee"
+ 
+[[compact_layout.children.children]]
+widget = "progress"
+ 
+[fullscreen_layout]
+direction = "vertical"
+ 
+[[fullscreen_layout.constraints]]
+length = 18
+ 
+[[fullscreen_layout.constraints]]
+length = 8
+ 
+[[fullscreen_layout.constraints]]
+min = 0
+ 
+[[fullscreen_layout.children]]
+widget = "now_playing"
+ 
+[[fullscreen_layout.children]]
+widget = "fullscreen_lyrics"
+ 
+[[fullscreen_layout.children]]
+widget = "visualizer"
+ 
+[visualizer]
+style = "block_bars"
+ 
+[borders.header]
+style = "none"
+ 
+[borders.progress]
+style = "none"
+ 
+[borders.playlists]
+style = "left_bar"
+color_focused = "{{colors.primary.default.hex}}"
+color_unfocused = "{{colors.outline_variant.default.hex}}"
+ 
+[borders.album_art_with_info]
+style = "none"
+ 
+[borders.visualizer]
+style = "none"
+ 
+[borders.library]
+style = "left_bar"
+color_focused = "{{colors.primary.default.hex}}"
+color_unfocused = "{{colors.outline_variant.default.hex}}"
+ 
+[borders.queue]
+style = "left_bar"
+color_focused = "{{colors.primary.default.hex}}"
+color_unfocused = "{{colors.outline_variant.default.hex}}"
+ 
+[borders.album_art]
+style = "none"
+ 
+[borders.search]
+style = "left_bar"
+color_focused = "{{colors.primary.default.hex}}"
+color_unfocused = "{{colors.outline_variant.default.hex}}"
+ 
+[borders.marquee]
+style = "none"
+ 
+[borders.help]
+style = "none"
+ 
+[borders.main_content]
+style = "left_bar"
+color_focused = "{{colors.primary.default.hex}}"
+color_unfocused = "{{colors.outline_variant.default.hex}}"

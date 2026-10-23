@@ -1,0 +1,112 @@
+configuration {
+    modi: "drun,run,filebrowser,window";
+    show-icons: true;
+    display-drun: "Apps";
+    display-run: "RUN";
+    display-filebrowser: "FILES";
+    display-window: "WINDOW";
+    font: "JetBrainsMono Nerd Font 13";
+    drun-display-format: "{name}";
+    window-format: "{w} · {c} · {t}";
+    terminal: "ghostty";
+}
+
+/* Import Matugen dynamic colors */
+@import "~/.config/rofi/colors.rasi"
+
+/* Apply Matugen variables to Rofi UI */
+window {
+    width: 30%;
+    border: 4px;
+    border-radius: 5px;
+    border-color: @selected;
+    background-color: @background;
+    padding: 15px;
+}
+
+mainbox {
+    orientation: horizontal;
+    background-color: transparent;
+    children: [ left-box, right-box ];
+    spacing: 0px;
+    border-radius: 0px;
+}
+
+left-box {
+    background-color: transparent;
+    background-image: url("~/.cache/rofi_current_wallpaper.png", height);
+    expand: true;
+}
+
+right-box {
+    orientation: vertical;
+    background-color: @background-alt2;
+    children: [ inputbar, listview ];
+    spacing: 10px;
+    padding: 12px;
+    expand: true;
+    border-radius: 0px;
+}
+
+inputbar {
+    background-color: transparent;
+    text-color: @foreground;
+    border-radius: 5px;
+    padding: 10px 14px;
+    children: [ prompt, entry ];
+    spacing: 10px;
+}
+
+prompt {
+    background-color: transparent;
+    text-color: @selected;
+    font: "Bold 10";
+}
+
+entry {
+    background-color: transparent;
+    text-color: @foreground;
+    placeholder: "Search...";
+    placeholder-color: @foreground;
+}
+
+listview {
+    background-color: transparent;
+    columns: 1;
+    lines: 6;
+    spacing: 2px;
+    cycle: true;
+    dynamic: true;
+}
+
+element {
+    background-color: transparent;
+    text-color: @foreground;
+    padding: 5px 8px 5px 8px;
+    border-radius: 5px;
+    orientation: horizontal;
+}
+
+/* Remove alternating row highlights */
+element normal.normal,
+element alternate.normal {
+    background-color: transparent;
+    text-color: @foreground;
+}
+
+element selected {
+    background-color: @selected;
+    text-color: @selected-text;
+}
+
+element-icon {
+    background-color: transparent;
+    margin: 0px 12px 0px 0px;
+    size: 26px;
+}
+
+element-text {
+    background-color: transparent;
+    text-color: inherit;
+    vertical-align: 0.5;
+}
