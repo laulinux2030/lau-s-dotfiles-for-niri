@@ -124,8 +124,8 @@ input {
     output "DP-3"  {
     mode "2560x1440@164.999"
     max-bpc 10
-    hdr mode="on" {
-        reference-luminance 220
+     hdr mode="on" {
+         reference-luminance 210
     }
     scale 1.25
 }
