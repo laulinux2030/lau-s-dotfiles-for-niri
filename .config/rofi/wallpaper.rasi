@@ -76,7 +76,7 @@ listview {
 element {
     background-color: transparent;
     text-color: @foreground;
-    padding: 5px 10px 5px -12px;
+    padding: 5px 8px 5px 8px;
     spacing: 12px;
     border-radius: 5px;
     orientation: horizontal;
