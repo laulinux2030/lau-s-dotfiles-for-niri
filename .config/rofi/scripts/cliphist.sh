@@ -2,12 +2,10 @@
 set -euo pipefail
  
 selection=$(
-	{ printf '\tWipe History\n'; cliphist list; } |
+	{ printf 'Wipe History\n';cliphist list; } |
 	rofi -dmenu \
-		-theme "$HOME/.config/rofi/wallpaper.rasi" \
-		-theme-str '' \
+		-theme "$HOME/.config/rofi/cliphist.rasi" \
 		-p Clipboard \
-		-display-columns 2
 )
  
 [[ -z "$selection" ]] && exit 0

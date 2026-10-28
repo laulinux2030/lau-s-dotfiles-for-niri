@@ -2,17 +2,17 @@
 -- ~/.config/matugen/templates/neovim.lua
 local colors = {
   bg                     = "NONE", -- Transparent für den Hauptcode
-  fg                     = "#e3e2e9",
-  cursor                 = "#b3c5ff",
-  primary                = "#b3c5ff",
-  secondary              = "#c1c6dd",
-  tertiary               = "#e1bbdc",
+  fg                     = "#e2e2e9",
+  cursor                 = "#adc6ff",
+  primary                = "#adc6ff",
+  secondary              = "#bfc6dc",
+  tertiary               = "#debcdf",
   error                  = "#ffb4ab",
   
   -- Neuer Farbton für Menüs, Popups & Leisten (höherer Kontrast/andere Stufe)
-  surface_container_high = "#292a2f",
-  surface_variant        = "#45464f",
-  on_surface_var         = "#c5c6d0",
+  surface_container_high = "#282a2f",
+  surface_variant        = "#44474f",
+  on_surface_var         = "#c4c6d0",
 }
 
 local hl = vim.api.nvim_set_hl
