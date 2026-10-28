@@ -9,13 +9,13 @@ height=150
 border-radius=5
 border-color=#FFFFFFFF
 border-size=1
-background-color=#275021
+background-color=#2a4678
 
 
 default-timeout=2000
 
 [app-name=volume-osd]
-progress-color=over #a4d396
+progress-color=over #acc7ff
 anchor=bottom-center
 margin=0,0,70
 default-timeout=1500
