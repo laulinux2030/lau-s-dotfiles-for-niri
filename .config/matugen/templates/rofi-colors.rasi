@@ -1,4 +1,5 @@
 * {
+    bg-dark: 		      {{colors.secondary_container.default.hex}};
     bg:                       {{colors.surface.default.rgba | set_alpha: 0.5}};
     bg-alt2:		      {{colors.primary_container.default.rgba}};
     bg-alt:                   {{colors.surface_container_high.default.rgba | set_alpha: 0.6}};
@@ -7,7 +8,7 @@
 
     background:               @bg;
     background-alt:           @bg-alt;
-    background-alt2:	      @bg-alt2;
+    background-alt2:	      @bg-dark;
     foreground:               @fg;
     selected:                 @accent;
     selected-text:            {{colors.on_primary.default.hex}};

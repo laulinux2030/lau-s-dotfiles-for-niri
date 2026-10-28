@@ -36,7 +36,7 @@ tooltip {
 
 /* 5 Pillen mit flüssiger Animation */
 #custom-media {
-    background: @tertiary;
+    background: @secondary;
     border: 1px solid @text;
     border-radius: 5px;
     margin: 4px 2px;
@@ -87,7 +87,7 @@ tooltip {
 }
 
 #network {
-    background: @tertiary; 
+    background: @secondary; 
     opacity: 1;
     border: 1px solid @text;
     border-radius: 5px;
@@ -122,7 +122,7 @@ tooltip {
 }
 
 #custom-hdr {
-    background: @primarydark;
+    background: @secondary;
     opacity: 1;
     border: 1px solid @text;
     border-radius: 5px;
@@ -140,7 +140,7 @@ tooltip {
 }
 
 #custom-power {
-    background: #a11608;
+    background: @secondary;
     border: 1px solid @text;
     border-radius: 5px;
     margin: 4px 2px;
@@ -150,9 +150,9 @@ tooltip {
 }
 
 #custom-power:hover {
-    background: #A12608;
+    background: @secondary;
     color: #ffffff;
-    border: 1px solid #ffffff;
+    border: 1px solid @primary;
     border-radius: 6px;
     padding: 0 16px;
 }
@@ -176,7 +176,7 @@ tooltip {
 }
 
 #custom-mount {
-    background: @tertiary;
+    background: @secondary;
     border: 1px solid @text;
     border-radius: 5px;
     margin: 4px 2px;
@@ -193,7 +193,7 @@ tooltip {
 }
 
 #custom-sunshine {
-    background: @primarydark;
+    background: @secondary;
     opacity: 1;
     border: 1px solid @text;
     border-radius: 5px;
@@ -211,7 +211,7 @@ tooltip {
 }
 
 #custom-wallpaper {
-    background: @tertiary; 
+    background: @secondary; 
     opacity: 1;
     border: 1px solid @text;
     border-radius: 5px;
@@ -229,7 +229,7 @@ tooltip {
 }
 
 #custom-cliphist {
-    background: @primarydark;
+    background: @secondary;
     opacity: 1;
     border: 1px solid @text;
     border-radius: 5px;
