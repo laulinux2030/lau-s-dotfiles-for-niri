@@ -16,12 +16,12 @@ configuration {
 
 /* Apply Matugen variables to Rofi UI */
 window {
-    width: 33%;
+    width: 25%;
     border: 4px;
     border-radius: 5px;
     border-color: @selected;
     background-color: @background;
-    padding: 15px;
+    padding: 0px;
 }
 
 mainbox {

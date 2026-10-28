@@ -21,7 +21,7 @@ window {
     border-radius: 5px;
     border-color: @selected;
     background-color: @background;
-    padding: 15px;
+    padding: 0px;
 }
 
 mainbox {
