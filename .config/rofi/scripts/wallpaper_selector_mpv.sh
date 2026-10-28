@@ -37,14 +37,7 @@ done < <(find "$WALLPAPER_DIR" -maxdepth 1 -type f \( -iname "*.gif" -o -iname "
 selected=$(echo -ne "$rofi_input" | rofi -dmenu \
     -p "Wallpaper" \
     -show-icons \
-    -theme "$HOME/.config/rofi/wallpaper.rasi" \
-    -theme-str '
-        window { width: 30%; height: 45%; }
-        listview { columns: 3; lines: 2; spacing: 10px; }
-        element { orientation: vertical; padding: 10px; }
-        element-icon { size: 140px; horizontal-align: 0.5; }
-        element-text { horizontal-align: 0.5; vertical-align: 0.5; }
-    ')
+    -theme "$HOME/.config/rofi/wallpaper.rasi")
 
 # 3. Apply selected wallpaper/video
 if [ -n "$selected" ]; then

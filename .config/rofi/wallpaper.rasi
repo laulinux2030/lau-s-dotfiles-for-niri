@@ -1,14 +1,6 @@
 configuration {
-    modi: "drun,run,filebrowser,window";
     show-icons: true;
-    display-drun: "Apps";
-    display-run: "RUN";
-    display-filebrowser: "FILES";
-    display-window: "WINDOW";
     font: "JetBrainsMono Nerd Font 13";
-    drun-display-format: "{name}";
-    window-format: "{w} · {c} · {t}";
-    terminal: "ghostty";
 }
 
 /* Import Matugen dynamic colors */
@@ -25,16 +17,33 @@ window {
 }
 
 mainbox {
+    orientation: horizontal;
     background-color: transparent;
-    children: [ inputbar, listview ];
+    children: [ left-box, right-box ];
     spacing: 0px;
     border-radius: 0px;
 }
 
-inputbar {
+left-box {
+    background-color: transparent;
+    background-image: url("~/.cache/rofi_current_wallpaper.png", height);
+    expand: true;
+}
+
+right-box {
+    orientation: vertical;
     background-color: @background-alt2;
-    text-color: @foreground;
+    children: [ inputbar, listview ];
+    spacing: 10px;
+    padding: 12px;
+    expand: true;
     border-radius: 0px;
+}
+
+inputbar {
+    background-color: transparent;
+    text-color: @foreground;
+    border-radius: 5px;
     padding: 10px 14px;
     children: [ prompt, entry ];
     spacing: 10px;
@@ -53,20 +62,22 @@ entry {
     placeholder-color: @foreground;
 }
 
+/* One column list: thumbnail on the left, name beside it */
 listview {
-    background-color: @background-alt2;
+    background-color: transparent;
     columns: 1;
-    lines: 8;
-    padding: 0px 0px 0px 0px;
-    spacing: 6px;
+    lines: 4;
+    spacing: 0px;
     cycle: true;
     dynamic: true;
+    scrollbar: false;
 }
 
 element {
     background-color: transparent;
     text-color: @foreground;
-    padding: 8px 12px;
+    padding: 5px 10px 5px -12px;
+    spacing: 12px;
     border-radius: 5px;
     orientation: horizontal;
 }
@@ -83,9 +94,10 @@ element selected {
     text-color: @selected-text;
 }
 
+/* Small wallpaper thumbnail (change size to taste) */
 element-icon {
     background-color: transparent;
-    size: 24px;
+    size: 48px;
 }
 
 element-text {

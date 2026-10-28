@@ -125,7 +125,7 @@ input {
     mode "2560x1440@164.999"
     max-bpc 10
      hdr mode="on" {
-         reference-luminance 210
+         reference-luminance 170
     }
     scale 1.25
 }
