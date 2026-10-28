@@ -1,14 +1,14 @@
 * {
-    bg:                       rgba(14, 20, 21, 0.5);
-    bg-alt2:		      rgba(0, 79, 82, 1);
-    bg-alt:                   rgba(37, 43, 43, 0.6);
-    fg:                       #dde4e3;
-    accent:                   rgba(128, 212, 216, 0.85);
+    bg:                       rgba(18, 20, 13, 0.5);
+    bg-alt2:		      rgba(57, 77, 18, 1);
+    bg-alt:                   rgba(41, 43, 35, 0.6);
+    fg:                       #e3e3d8;
+    accent:                   rgba(182, 208, 134, 0.85);
 
     background:               @bg;
     background-alt:           @bg-alt;
     background-alt2:	      @bg-alt2;
     foreground:               @fg;
     selected:                 @accent;
-    selected-text:            #003739;
+    selected-text:            #243600;
 }

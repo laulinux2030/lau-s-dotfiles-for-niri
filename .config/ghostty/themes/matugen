@@ -7,25 +7,25 @@ window-padding-y = 8
 
 confirm-close-surface = false
 
-background = #0e1415
-foreground = #dde4e3
-cursor-color = #80d4d8
-selection-background = #324b4c
-selection-foreground = #cce8e9
+background = #12140d
+foreground = #e3e3d8
+cursor-color = #b6d086
+selection-background = #424a32
+selection-foreground = #dde6c6
 
-palette = 0=#0e1415
+palette = 0=#12140d
 palette = 1=#ffb4ab
-palette = 2=#80d4d8
-palette = 3=#b5c7e9
-palette = 4=#b0cccd
-palette = 5=#364764
-palette = 6=#004f52
-palette = 7=#dde4e3
-palette = 8=#3f4949
+palette = 2=#b6d086
+palette = 3=#a0d0c9
+palette = 4=#c1caab
+palette = 5=#1f4e49
+palette = 6=#394d12
+palette = 7=#e3e3d8
+palette = 8=#45483d
 palette = 9=#93000a
-palette = 10=#80d4d8
-palette = 11=#b5c7e9
-palette = 12=#b0cccd
-palette = 13=#364764
-palette = 14=#004f52
-palette = 15=#bec8c8
+palette = 10=#b6d086
+palette = 11=#a0d0c9
+palette = 12=#c1caab
+palette = 13=#1f4e49
+palette = 14=#394d12
+palette = 15=#c5c8b9
