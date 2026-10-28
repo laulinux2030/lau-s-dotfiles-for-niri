@@ -37,7 +37,7 @@ tooltip {
 /* 5 Pillen mit flüssiger Animation */
 #custom-media {
     background: @secondary;
-    border: 1px solid @text;
+    border: 0px solid @text;
     border-radius: 5px;
     margin: 4px 2px;
     padding: 0px 12px;
@@ -54,7 +54,7 @@ tooltip {
 
 #clock {
     background: @primarydark;
-    border: 1px solid @text;
+    border: 0px solid @text;
     border-radius: 5px;
     margin: 4px 2px;
     padding: 0 12px;
@@ -71,7 +71,7 @@ tooltip {
 
 #memory {
     background: @secondary;
-    border: 1px solid @text;
+    border: 0px solid @text;
     border-radius: 5px;
     margin: 4px 2px;
     padding: 0 12px; /* Identisch zu #custom-power */
@@ -89,7 +89,7 @@ tooltip {
 #network {
     background: @secondary; 
     opacity: 1;
-    border: 1px solid @text;
+    border: 0px solid @text;
     border-radius: 5px;
     margin: 4px 2px;
     padding: 0 12px;
@@ -106,7 +106,7 @@ tooltip {
 
 #pulseaudio {
     background: @secondary;
-    border: 1px solid @text;
+    border: 0px solid @text;
     border-radius: 5px;
     margin: 4px 2px;
     padding: 0 12px;
@@ -124,7 +124,7 @@ tooltip {
 #custom-hdr {
     background: @secondary;
     opacity: 1;
-    border: 1px solid @text;
+    border: 0px solid @text;
     border-radius: 5px;
     margin: 4px 2px;
     padding: 0 12px;
@@ -141,7 +141,7 @@ tooltip {
 
 #custom-power {
     background: @secondary;
-    border: 1px solid @text;
+    border: 0px solid @text;
     border-radius: 5px;
     margin: 4px 2px;
     padding: 0 12px;
@@ -160,7 +160,7 @@ tooltip {
 /* Wetter-Modul Styling - gleiche Farbe wie Memory */
 #custom-weather {
     background: @secondary;  /* Gleiche wie #memory */
-    border: 1px solid @text;
+    border: 0px solid @text;
     border-radius: 5px;
     margin: 4px 2px;
     padding: 0 12px;
@@ -177,7 +177,7 @@ tooltip {
 
 #custom-mount {
     background: @secondary;
-    border: 1px solid @text;
+    border: 0px solid @text;
     border-radius: 5px;
     margin: 4px 2px;
     padding: 0 12px;
@@ -195,7 +195,7 @@ tooltip {
 #custom-sunshine {
     background: @secondary;
     opacity: 1;
-    border: 1px solid @text;
+    border: 0px solid @text;
     border-radius: 5px;
     margin: 4px 2px;
     padding: 0 12px;
@@ -213,7 +213,7 @@ tooltip {
 #custom-wallpaper {
     background: @secondary; 
     opacity: 1;
-    border: 1px solid @text;
+    border: 0px solid @text;
     border-radius: 5px;
     margin: 4px 2px;
     padding: 0 12px;
@@ -231,7 +231,7 @@ tooltip {
 #custom-cliphist {
     background: @secondary;
     opacity: 1;
-    border: 1px solid @text;
+    border: 0px solid @text;
     border-radius: 5px;
     margin: 4px 2px;
     padding: 0 12px;
@@ -248,7 +248,7 @@ tooltip {
 
 #custom-drun {
     background: @secondary;  /* Gleiche wie #memory */
-    border: 1px solid @text;
+    border: 0px solid @text;
     border-radius: 5px;
     margin: 4px 2px;
     padding: 0 12px;
