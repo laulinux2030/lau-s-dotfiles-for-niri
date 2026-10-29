@@ -16,8 +16,8 @@ configuration {
 
 /* Apply Matugen variables to Rofi UI */
 window {
-    width: 26%;
-    border: 4px;
+    width: 22%;
+    border: 3px;
     border-radius: 5px;
     border-color: @selected;
     background-color: @background;

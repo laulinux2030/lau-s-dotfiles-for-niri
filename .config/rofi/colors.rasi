@@ -1,15 +1,15 @@
 * {
-    bg-dark: 		      #3f4759;
-    bg:                       rgba(17, 19, 24, 0.5);
-    bg-alt2:		      rgba(43, 70, 120, 1);
-    bg-alt:                   rgba(40, 42, 47, 0.6);
-    fg:                       #e2e2e9;
-    accent:                   rgba(173, 198, 255, 0.85);
+    bg-dark: 		      #454559;
+    bg:                       rgba(19, 19, 24, 0.5);
+    bg-alt2:		      rgba(63, 65, 120, 1);
+    bg-alt:                   rgba(42, 41, 47, 0.6);
+    fg:                       #e4e1e9;
+    accent:                   rgba(192, 193, 255, 0.85);
 
     background:               @bg;
     background-alt:           @bg-alt;
     background-alt2:	      @bg-dark;
     foreground:               @fg;
     selected:                 @accent;
-    selected-text:            #102f60;
+    selected-text:            #292a60;
 }

@@ -9,7 +9,7 @@
   "margin-left": 10,
   "margin-top": -26,
   "modules-left": [],
-  "modules-center": ["custom/drun","custom/media","custom/sunshine","custom/weather","custom/wallpaper", "clock", "memory", "network","custom/cliphist", "pulseaudio", "custom/mount", "custom/hdr" , "custom/power"],
+  "modules-center": ["custom/drun","custom/media","custom/sunshine","custom/weather","custom/wallpaper", "clock", "memory", "network", "pulseaudio", "custom/mount", "custom/hdr" , "custom/power"],
   "modules-right": [],
 
   // MODULES

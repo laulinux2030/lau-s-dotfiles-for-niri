@@ -1,35 +1,35 @@
 [mgr]
-cwd = { fg = "#adc6ff" }
+cwd = { fg = "#c0c1ff" }
 
 # Hovered / Selected items
-hovered = { fg = "#d8e2ff", bg = "#2b4678" }
+hovered = { fg = "#e1e0ff", bg = "#3f4178" }
 preview_hovered = { underline = true }
 
 # Selection / Multi-select
-find_keyword  = { fg = "#adc6ff", bold = true, italic = true }
-find_position = { fg = "#bfc6dc", bold = true }
+find_keyword  = { fg = "#c0c1ff", bold = true, italic = true }
+find_position = { fg = "#c6c4dd", bold = true }
 
 # Border & Header
-border = { fg = "#8e9099" }
-title  = { fg = "#adc6ff" }
+border = { fg = "#918f9a" }
+title  = { fg = "#c0c1ff" }
 
 [mode]
-normal_main = { fg = "#102f60", bg = "#adc6ff", bold = true }
-normal_alt  = { fg = "#adc6ff", bg = "#282a2f" }
-select_main = { fg = "#293041", bg = "#bfc6dc", bold = true }
-select_alt  = { fg = "#bfc6dc", bg = "#282a2f" }
+normal_main = { fg = "#292a60", bg = "#c0c1ff", bold = true }
+normal_alt  = { fg = "#c0c1ff", bg = "#2a292f" }
+select_main = { fg = "#2e2f42", bg = "#c6c4dd", bold = true }
+select_alt  = { fg = "#c6c4dd", bg = "#2a292f" }
 
 [status]
 separator_open  = ""
 separator_close = ""
-separator_style = { fg = "#282a2f", bg = "#282a2f" }
+separator_style = { fg = "#2a292f", bg = "#2a292f" }
 
 # Permissions
-permissions_t = { fg = "#adc6ff" }
-permissions_r = { fg = "#bfc6dc" }
+permissions_t = { fg = "#c0c1ff" }
+permissions_r = { fg = "#c6c4dd" }
 permissions_w = { fg = "#ffb4ab" }
-permissions_x = { fg = "#debcdf" }
-permissions_s = { fg = "#8e9099" }
+permissions_x = { fg = "#e9b9d3" }
+permissions_s = { fg = "#918f9a" }
 
 # ==============================================================================
 # Dateinamen und Ordner-Text (Streng Weiß)
@@ -54,24 +54,24 @@ rules = [
 
 # Prepend Dirs: Überschreibt die XDG-Ordner
 prepend_dirs = [
-	{ name = "Desktop",     text = "󰨇", fg = "#adc6ff" },
-	{ name = "Development", text = "󰲋", fg = "#adc6ff" },
-	{ name = "Downloads",   text = "󰉍", fg = "#adc6ff" },
-	{ name = "Library",     text = "󰂺", fg = "#adc6ff" },
-	{ name = "Movies",      text = "󰿎", fg = "#adc6ff" },
-	{ name = "Music",       text = "󱍙", fg = "#adc6ff" },
-	{ name = "Pictures",    text = "󰋩", fg = "#adc6ff" },
-	{ name = "Public",      text = "󰋩", fg = "#adc6ff" },
-	{ name = "Videos",      text = "󰕧", fg = "#adc6ff" },
-	{ name = "Documents",   text = "󰈙", fg = "#adc6ff" },
+	{ name = "Desktop",     text = "󰨇", fg = "#c0c1ff" },
+	{ name = "Development", text = "󰲋", fg = "#c0c1ff" },
+	{ name = "Downloads",   text = "󰉍", fg = "#c0c1ff" },
+	{ name = "Library",     text = "󰂺", fg = "#c0c1ff" },
+	{ name = "Movies",      text = "󰿎", fg = "#c0c1ff" },
+	{ name = "Music",       text = "󱍙", fg = "#c0c1ff" },
+	{ name = "Pictures",    text = "󰋩", fg = "#c0c1ff" },
+	{ name = "Public",      text = "󰋩", fg = "#c0c1ff" },
+	{ name = "Videos",      text = "󰕧", fg = "#c0c1ff" },
+	{ name = "Documents",   text = "󰈙", fg = "#c0c1ff" },
 ]
 
 # Prepend Conds: Ordner-Fallback & Spezial-Dateitypen (Executables / Links)
 prepend_conds = [
 	# Generisches Ordner-Icon für alle restlichen Ordner
-	{ if = "dir", text = "󰉋", fg = "#adc6ff" },
+	{ if = "dir", text = "󰉋", fg = "#c0c1ff" },
 
 	# Spezial-Icons
-	{ if = "exec", text = "󰅍", fg = "#debcdf" },
-	{ if = "link", text = "󰌷", fg = "#bfc6dc" },
+	{ if = "exec", text = "󰅍", fg = "#e9b9d3" },
+	{ if = "link", text = "󰌷", fg = "#c6c4dd" },
 ]
