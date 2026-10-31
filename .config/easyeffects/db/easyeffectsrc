@@ -6,7 +6,7 @@ inputDevice=alsa_input.usb-Focusrite_Scarlett_Solo_USB_Y79F7T40853ABE-00.Direct_
 
 [StreamOutputs]
 mostUsedPresets=EQ BASS BOOST
-outputDevice=alsa_output.usb-Focusrite_Scarlett_Solo_USB_Y79F7T40853ABE-00.Direct__Direct__sink
+outputDevice=alsa_output.pci-0000_08_00.1.hdmi-stereo
 plugins=equalizer#0,convolver#0,bass_enhancer#0,multiband_compressor#0
 usedPresets=EQ BASS BOOST:1
 visiblePlugin=equalizer#0
