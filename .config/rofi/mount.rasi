@@ -101,7 +101,7 @@ element selected {
 
 element-icon {
     background-color: transparent;
-    size: 24px;
+    size: 18px;
 }
 
 element-text {
