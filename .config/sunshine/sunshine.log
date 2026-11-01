@@ -1,89 +1,89 @@
-[2026-10-31 16:55:14.502]: Info: Sunshine version: 2026.516.143833 commit: 14ffa6fdaa53f7b51512be2b3d24f3939695403c
-[2026-10-31 16:55:14.502]: Info: Package Publisher: LizardByte
-[2026-10-31 16:55:14.502]: Info: Publisher Website: https://app.lizardbyte.dev
-[2026-10-31 16:55:14.502]: Info: Get support: https://app.lizardbyte.dev/support
-[2026-10-31 16:55:14.502]: Info: config: 'output_name' = Virtual-1
-[2026-10-31 16:55:14.855]: Error: Failed to create session: 
-[2026-10-31 16:55:14.857]: Info: [wayland] Found display [wayland-1]
-[2026-10-31 16:55:14.858]: Info: [wayland] Found interface: zxdg_output_manager_v1(9) version 3
-[2026-10-31 16:55:14.858]: Info: [wayland] Found interface: zwlr_screencopy_manager_v1(32) version 3
-[2026-10-31 16:55:14.858]: Info: [wayland] Found interface: zwp_linux_dmabuf_v1(45) version 5
-[2026-10-31 16:55:14.858]: Info: [wayland] Found interface: wl_output(47) version 4
-[2026-10-31 16:55:14.859]: Info: [wayland] Resolution: 2560x1440
-[2026-10-31 16:55:14.859]: Info: [wayland] Offset: 0x0
-[2026-10-31 16:55:14.859]: Info: [wayland] Logical size: 2048x1152
-[2026-10-31 16:55:14.859]: Info: [wayland] Name: DP-3
-[2026-10-31 16:55:14.859]: Info: [wayland] Found monitor: Acer Technologies - ED273U P - DP-3
-[2026-10-31 16:55:14.859]: Info: [wlgrab] -------- Start of Wayland monitor list --------
-[2026-10-31 16:55:14.859]: Info: [wlgrab] Monitor 0 is DP-3: Acer Technologies - ED273U P - DP-3
-[2026-10-31 16:55:14.859]: Info: [wlgrab] --------- End of Wayland monitor list ---------
-[2026-10-31 16:55:15.000]: Info: // Testing for available encoders, this may generate errors. You can safely ignore those errors. //
-[2026-10-31 16:55:15.000]: Info: Trying encoder [nvenc]
-[2026-10-31 16:55:15.000]: Info: [misc] drop_elevated_privileges succeeded in dropping capabilities
-[2026-10-31 16:55:15.000]: Info: Screencasting with Wayland's protocol
-[2026-10-31 16:55:15.000]: Info: [wlgrab] Requested frame rate [60/1, approx. 60 fps]
-[2026-10-31 16:55:15.000]: Info: [wayland] Found display [wayland-1]
-[2026-10-31 16:55:15.000]: Info: [wayland] Found interface: zxdg_output_manager_v1(9) version 3
-[2026-10-31 16:55:15.000]: Info: [wayland] Found interface: zwlr_screencopy_manager_v1(32) version 3
-[2026-10-31 16:55:15.000]: Info: [wayland] Found interface: zwp_linux_dmabuf_v1(45) version 5
-[2026-10-31 16:55:15.000]: Info: [wayland] Found interface: wl_output(47) version 4
-[2026-10-31 16:55:15.000]: Info: [wayland] Resolution: 2560x1440
-[2026-10-31 16:55:15.000]: Info: [wayland] Offset: 0x0
-[2026-10-31 16:55:15.000]: Info: [wayland] Logical size: 2048x1152
-[2026-10-31 16:55:15.000]: Info: [wayland] Name: DP-3
-[2026-10-31 16:55:15.000]: Info: [wayland] Found monitor: Acer Technologies - ED273U P - DP-3
-[2026-10-31 16:55:15.000]: Info: [wlgrab] Selected monitor [Acer Technologies - ED273U P - DP-3] for streaming
-[2026-10-31 16:55:15.000]: Info: Creating encoder [h264_nvenc]
-[2026-10-31 16:55:15.000]: Info: Color coding: SDR (Rec. 601)
-[2026-10-31 16:55:15.000]: Info: Color depth: 8-bit
-[2026-10-31 16:55:15.000]: Info: Color range: JPEG
-[2026-10-31 16:55:15.031]: Warning: EGL: context priority set to HIGH but CAP_SYS_NICE capability is missing
-[2026-10-31 16:55:15.229]: Info: Streaming bitrate is 1000000
-[2026-10-31 16:55:15.442]: Info: Creating encoder [hevc_nvenc]
-[2026-10-31 16:55:15.442]: Info: Color coding: SDR (Rec. 601)
-[2026-10-31 16:55:15.442]: Info: Color depth: 8-bit
-[2026-10-31 16:55:15.442]: Info: Color range: JPEG
-[2026-10-31 16:55:15.443]: Warning: EGL: context priority set to HIGH but CAP_SYS_NICE capability is missing
-[2026-10-31 16:55:15.446]: Info: Streaming bitrate is 1000000
-[2026-10-31 16:55:15.490]: Info: Creating encoder [av1_nvenc]
-[2026-10-31 16:55:15.490]: Info: Color coding: SDR (Rec. 601)
-[2026-10-31 16:55:15.490]: Info: Color depth: 8-bit
-[2026-10-31 16:55:15.490]: Info: Color range: JPEG
-[2026-10-31 16:55:15.491]: Warning: EGL: context priority set to HIGH but CAP_SYS_NICE capability is missing
-[2026-10-31 16:55:15.494]: Info: Streaming bitrate is 1000000
-[2026-10-31 16:55:15.500]: Warning: [av1_nvenc @ 0x5ba1e0110980] Codec not supported
-[2026-10-31 16:55:15.500]: Error: [av1_nvenc @ 0x5ba1e0110980] Provided device doesn't support required NVENC features
-[2026-10-31 16:55:15.503]: Error: Could not open codec [av1_nvenc]: Function not implemented
-[2026-10-31 16:55:15.503]: Info: Screencasting with Wayland's protocol
-[2026-10-31 16:55:15.503]: Info: [wlgrab] Requested frame rate [60/1, approx. 60 fps]
-[2026-10-31 16:55:15.503]: Info: [wayland] Found display [wayland-1]
-[2026-10-31 16:55:15.503]: Info: [wayland] Found interface: zxdg_output_manager_v1(9) version 3
-[2026-10-31 16:55:15.503]: Info: [wayland] Found interface: zwlr_screencopy_manager_v1(32) version 3
-[2026-10-31 16:55:15.503]: Info: [wayland] Found interface: zwp_linux_dmabuf_v1(45) version 5
-[2026-10-31 16:55:15.503]: Info: [wayland] Found interface: wl_output(47) version 4
-[2026-10-31 16:55:15.503]: Info: [wayland] Resolution: 2560x1440
-[2026-10-31 16:55:15.503]: Info: [wayland] Offset: 0x0
-[2026-10-31 16:55:15.503]: Info: [wayland] Logical size: 2048x1152
-[2026-10-31 16:55:15.503]: Info: [wayland] Name: DP-3
-[2026-10-31 16:55:15.503]: Info: [wayland] Found monitor: Acer Technologies - ED273U P - DP-3
-[2026-10-31 16:55:15.503]: Info: [wlgrab] Selected monitor [Acer Technologies - ED273U P - DP-3] for streaming
-[2026-10-31 16:55:15.504]: Info: Creating encoder [hevc_nvenc]
-[2026-10-31 16:55:15.504]: Info: Color coding: SDR (Rec. 709)
-[2026-10-31 16:55:15.504]: Info: Color depth: 10-bit
-[2026-10-31 16:55:15.504]: Info: Color range: JPEG
-[2026-10-31 16:55:15.504]: Warning: EGL: context priority set to HIGH but CAP_SYS_NICE capability is missing
-[2026-10-31 16:55:15.507]: Info: Streaming bitrate is 1000000
-[2026-10-31 16:55:15.553]: Info: 
-[2026-10-31 16:55:15.553]: Info: // Ignore any errors mentioned above, they are not relevant. //
-[2026-10-31 16:55:15.553]: Info: 
-[2026-10-31 16:55:15.553]: Info: Found H.264 encoder: h264_nvenc [nvenc]
-[2026-10-31 16:55:15.553]: Info: Found HEVC encoder: hevc_nvenc [nvenc]
-[2026-10-31 16:55:15.563]: Info: Starting system tray
-[2026-10-31 16:55:15.564]: Info: Adding avahi service ubuntu26tower
-[2026-10-31 16:55:15.576]: Info: Configuration UI available at [https://localhost:47990]
-[2026-10-31 16:55:15.605]: Info: System tray created
-[2026-10-31 16:55:15.605]: Info: Starting main loop
-[2026-10-31 16:55:16.497]: Info: Avahi service ubuntu26tower successfully established.
-[2026-10-31 17:03:02.040]: Info: Terminate handler called
-[2026-10-31 17:03:02.043]: Error: Couldn't accept incoming connections: Operation canceled
-[2026-10-31 17:03:02.046]: Info: Main loop has exited
+[2026-11-01 10:35:07.660]: Info: Sunshine version: 2026.516.143833 commit: 14ffa6fdaa53f7b51512be2b3d24f3939695403c
+[2026-11-01 10:35:07.660]: Info: Package Publisher: LizardByte
+[2026-11-01 10:35:07.660]: Info: Publisher Website: https://app.lizardbyte.dev
+[2026-11-01 10:35:07.660]: Info: Get support: https://app.lizardbyte.dev/support
+[2026-11-01 10:35:07.660]: Info: config: 'output_name' = Virtual-1
+[2026-11-01 10:35:07.996]: Error: Failed to create session: 
+[2026-11-01 10:35:07.999]: Info: [wayland] Found display [wayland-1]
+[2026-11-01 10:35:07.999]: Info: [wayland] Found interface: zxdg_output_manager_v1(9) version 3
+[2026-11-01 10:35:07.999]: Info: [wayland] Found interface: zwlr_screencopy_manager_v1(32) version 3
+[2026-11-01 10:35:07.999]: Info: [wayland] Found interface: zwp_linux_dmabuf_v1(45) version 5
+[2026-11-01 10:35:07.999]: Info: [wayland] Found interface: wl_output(47) version 4
+[2026-11-01 10:35:08.002]: Info: [wayland] Resolution: 2560x1440
+[2026-11-01 10:35:08.002]: Info: [wayland] Offset: 0x0
+[2026-11-01 10:35:08.002]: Info: [wayland] Logical size: 2048x1152
+[2026-11-01 10:35:08.002]: Info: [wayland] Name: DP-3
+[2026-11-01 10:35:08.002]: Info: [wayland] Found monitor: Acer Technologies - ED273U P - DP-3
+[2026-11-01 10:35:08.002]: Info: [wlgrab] -------- Start of Wayland monitor list --------
+[2026-11-01 10:35:08.002]: Info: [wlgrab] Monitor 0 is DP-3: Acer Technologies - ED273U P - DP-3
+[2026-11-01 10:35:08.002]: Info: [wlgrab] --------- End of Wayland monitor list ---------
+[2026-11-01 10:35:08.199]: Info: // Testing for available encoders, this may generate errors. You can safely ignore those errors. //
+[2026-11-01 10:35:08.199]: Info: Trying encoder [nvenc]
+[2026-11-01 10:35:08.199]: Info: [misc] drop_elevated_privileges succeeded in dropping capabilities
+[2026-11-01 10:35:08.199]: Info: Screencasting with Wayland's protocol
+[2026-11-01 10:35:08.199]: Info: [wlgrab] Requested frame rate [60/1, approx. 60 fps]
+[2026-11-01 10:35:08.199]: Info: [wayland] Found display [wayland-1]
+[2026-11-01 10:35:08.199]: Info: [wayland] Found interface: zxdg_output_manager_v1(9) version 3
+[2026-11-01 10:35:08.199]: Info: [wayland] Found interface: zwlr_screencopy_manager_v1(32) version 3
+[2026-11-01 10:35:08.199]: Info: [wayland] Found interface: zwp_linux_dmabuf_v1(45) version 5
+[2026-11-01 10:35:08.199]: Info: [wayland] Found interface: wl_output(47) version 4
+[2026-11-01 10:35:08.199]: Info: [wayland] Resolution: 2560x1440
+[2026-11-01 10:35:08.199]: Info: [wayland] Offset: 0x0
+[2026-11-01 10:35:08.199]: Info: [wayland] Logical size: 2048x1152
+[2026-11-01 10:35:08.199]: Info: [wayland] Name: DP-3
+[2026-11-01 10:35:08.199]: Info: [wayland] Found monitor: Acer Technologies - ED273U P - DP-3
+[2026-11-01 10:35:08.199]: Info: [wlgrab] Selected monitor [Acer Technologies - ED273U P - DP-3] for streaming
+[2026-11-01 10:35:08.199]: Info: Creating encoder [h264_nvenc]
+[2026-11-01 10:35:08.199]: Info: Color coding: SDR (Rec. 601)
+[2026-11-01 10:35:08.199]: Info: Color depth: 8-bit
+[2026-11-01 10:35:08.199]: Info: Color range: JPEG
+[2026-11-01 10:35:08.224]: Warning: EGL: context priority set to HIGH but CAP_SYS_NICE capability is missing
+[2026-11-01 10:35:08.421]: Info: Streaming bitrate is 1000000
+[2026-11-01 10:35:08.621]: Info: Creating encoder [hevc_nvenc]
+[2026-11-01 10:35:08.621]: Info: Color coding: SDR (Rec. 601)
+[2026-11-01 10:35:08.621]: Info: Color depth: 8-bit
+[2026-11-01 10:35:08.621]: Info: Color range: JPEG
+[2026-11-01 10:35:08.622]: Warning: EGL: context priority set to HIGH but CAP_SYS_NICE capability is missing
+[2026-11-01 10:35:08.624]: Info: Streaming bitrate is 1000000
+[2026-11-01 10:35:08.670]: Info: Creating encoder [av1_nvenc]
+[2026-11-01 10:35:08.670]: Info: Color coding: SDR (Rec. 601)
+[2026-11-01 10:35:08.670]: Info: Color depth: 8-bit
+[2026-11-01 10:35:08.670]: Info: Color range: JPEG
+[2026-11-01 10:35:08.670]: Warning: EGL: context priority set to HIGH but CAP_SYS_NICE capability is missing
+[2026-11-01 10:35:08.673]: Info: Streaming bitrate is 1000000
+[2026-11-01 10:35:08.679]: Warning: [av1_nvenc @ 0x5d2adb668a00] Codec not supported
+[2026-11-01 10:35:08.679]: Error: [av1_nvenc @ 0x5d2adb668a00] Provided device doesn't support required NVENC features
+[2026-11-01 10:35:08.681]: Error: Could not open codec [av1_nvenc]: Function not implemented
+[2026-11-01 10:35:08.681]: Info: Screencasting with Wayland's protocol
+[2026-11-01 10:35:08.681]: Info: [wlgrab] Requested frame rate [60/1, approx. 60 fps]
+[2026-11-01 10:35:08.681]: Info: [wayland] Found display [wayland-1]
+[2026-11-01 10:35:08.682]: Info: [wayland] Found interface: zxdg_output_manager_v1(9) version 3
+[2026-11-01 10:35:08.682]: Info: [wayland] Found interface: zwlr_screencopy_manager_v1(32) version 3
+[2026-11-01 10:35:08.682]: Info: [wayland] Found interface: zwp_linux_dmabuf_v1(45) version 5
+[2026-11-01 10:35:08.682]: Info: [wayland] Found interface: wl_output(47) version 4
+[2026-11-01 10:35:08.682]: Info: [wayland] Resolution: 2560x1440
+[2026-11-01 10:35:08.682]: Info: [wayland] Offset: 0x0
+[2026-11-01 10:35:08.682]: Info: [wayland] Logical size: 2048x1152
+[2026-11-01 10:35:08.682]: Info: [wayland] Name: DP-3
+[2026-11-01 10:35:08.682]: Info: [wayland] Found monitor: Acer Technologies - ED273U P - DP-3
+[2026-11-01 10:35:08.682]: Info: [wlgrab] Selected monitor [Acer Technologies - ED273U P - DP-3] for streaming
+[2026-11-01 10:35:08.682]: Info: Creating encoder [hevc_nvenc]
+[2026-11-01 10:35:08.682]: Info: Color coding: SDR (Rec. 709)
+[2026-11-01 10:35:08.682]: Info: Color depth: 10-bit
+[2026-11-01 10:35:08.682]: Info: Color range: JPEG
+[2026-11-01 10:35:08.682]: Warning: EGL: context priority set to HIGH but CAP_SYS_NICE capability is missing
+[2026-11-01 10:35:08.685]: Info: Streaming bitrate is 1000000
+[2026-11-01 10:35:08.731]: Info: 
+[2026-11-01 10:35:08.731]: Info: // Ignore any errors mentioned above, they are not relevant. //
+[2026-11-01 10:35:08.731]: Info: 
+[2026-11-01 10:35:08.731]: Info: Found H.264 encoder: h264_nvenc [nvenc]
+[2026-11-01 10:35:08.731]: Info: Found HEVC encoder: hevc_nvenc [nvenc]
+[2026-11-01 10:35:08.743]: Info: Starting system tray
+[2026-11-01 10:35:08.745]: Info: Adding avahi service ubuntu26tower
+[2026-11-01 10:35:08.763]: Info: Configuration UI available at [https://localhost:47990]
+[2026-11-01 10:35:08.786]: Info: System tray created
+[2026-11-01 10:35:08.786]: Info: Starting main loop
+[2026-11-01 10:35:09.539]: Info: Avahi service ubuntu26tower successfully established.
+[2026-11-01 15:23:49.197]: Info: Terminate handler called
+[2026-11-01 15:23:49.201]: Error: Couldn't accept incoming connections: Operation canceled
+[2026-11-01 15:23:49.201]: Info: Main loop has exited

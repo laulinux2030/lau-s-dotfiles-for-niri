@@ -9,7 +9,7 @@
   "margin-left": 10,
   "margin-top": -26,
   "modules-left": [],
-  "modules-center": ["custom/drun","custom/media","custom/sunshine","custom/weather","custom/wallpaper", "clock", "memory", "network", "pulseaudio", "custom/mount", "custom/hdr" , "custom/power"],
+  "modules-center": ["custom/drun","custom/media","custom/sunshine","custom/weather","custom/wallpaper", "clock", "memory", "custom/cputemp", "network", "pulseaudio", "custom/mount", "custom/hdr" , "custom/power"],
   "modules-right": [],
 
   // MODULES
@@ -18,6 +18,20 @@
     "interval": 2,
     "format": "{icon} {percentage}%",
     "format-icons": ["󰪞", "󰪟", "󰪠", "󰪡", "󰪢", "󰪣", "󰪤", "󰪥"],
+    "on-click": "ghostty -e btop"
+  },
+
+  "custom/cputemp": {
+    "exec": "~/.config/waybar/cputemp.sh",
+    "return-type": "json",
+    "interval": 1,
+    "format": "{icon} {text}",
+    "format-icons": {
+        "low":      "",  // below 55 °C
+        "mid":      "",  // below 65 °C
+        "high":     "",  // below 77 °C
+        "critical": ""   // 77 °C and above
+    },
     "on-click": "ghostty -e btop"
   },
 

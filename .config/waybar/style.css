@@ -35,6 +35,25 @@ tooltip {
 }
 
 /* 5 Pillen mit flüssiger Animation */
+
+#custom-cputemp {
+    background: @secondary;
+    border: 0px solid @text;
+    border-radius: 5px;
+    margin: 4px 2px;
+    padding: 0px 12px;
+    color: @text;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#custom-cputemp:hover {
+    color: #ffffff;
+    border-radius: 6px;
+    border: 1px solid @primary;
+    padding: 0 16px;
+}
+
+
 #custom-media {
     background: @secondary;
     border: 0px solid @text;
