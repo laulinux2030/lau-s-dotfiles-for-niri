@@ -46,7 +46,6 @@ if [ -n "$selected" ]; then
 
     # Alte mpvpaper Instanzen sauber beenden
     pkill -SIGTERM -x mpvpaper
-    pkill -x waybar
     sleep 0.5
 
     # A) mpvpaper rendert das Backdrop (niri platziert die Layer-Surface per layer-rule
@@ -86,7 +85,4 @@ IS_GIF=$( [[ "$selected" =~ \.(gif|GIF)$ ]] && echo "true" || echo "false" )
 EOF
 
     echo "Wallpaper state saved to $STATE_FILE" >> "$LOG_FILE"
-
-    sleep 0.5
-    nohup waybar >/dev/null 2>&1 &
 fi

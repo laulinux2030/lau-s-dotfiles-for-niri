@@ -9,7 +9,7 @@
   "margin-left": 10,
   "margin-top": -26,
   "modules-left": [],
-  "modules-center": ["custom/drun","custom/media","custom/sunshine","custom/weather","custom/wallpaper", "clock", "memory", "custom/cputemp", "network", "pulseaudio", "custom/mount", "custom/hdr" , "custom/power"],
+  "modules-center": ["custom/media", "custom/drun", "custom/sunshine","custom/weather","custom/wallpaper", "clock", "memory", "custom/cputemp", "network", "pulseaudio", "custom/mount", "custom/hdr" , "custom/power"],
   "modules-right": [],
 
   // MODULES
@@ -82,7 +82,7 @@
     "format": "{icon} {volume}%",
     "format-muted": "󰝟 Muted",
     "format-icons": {
-      "default": ["󰕿", "󰖀", "󰕾"]
+      "default": ["󰖀", "󰖀", "󰕾"]
     },
     "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
     "on-click-right": "pavucontrol"
@@ -131,7 +131,7 @@
 
   "custom/drun": {
     "interval": 0.3,
-    "format": "󰀻 drun",
+    "format": "󰀻 run",
     "tooltip": false,
     "on-click": "~/.config/rofi/scripts/drun.sh"
   },

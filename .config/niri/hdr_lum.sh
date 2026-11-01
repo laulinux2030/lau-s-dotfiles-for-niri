@@ -13,7 +13,7 @@ elif [ "$1" = "down" ]; then
     new=$((current - 10))
     [ $new -lt 50 ] && new=50
 elif [ "$1" = "get" ]; then
-    echo "{\"text\": \"󰃟 ${current}nits\", \"tooltip\": \"HDR Reference Luminance: ${current} nits\"}"
+    echo "{\"text\": \"󰃟 ${current}\", \"tooltip\": \"HDR Reference Luminance: ${current} nits\"}"
     exit 0
 fi
 
