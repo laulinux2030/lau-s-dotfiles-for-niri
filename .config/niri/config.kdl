@@ -28,6 +28,12 @@ layer-rule {
     match namespace="^mpvpaper$"
     place-within-backdrop true
 }
+
+window-rule {
+    match app-id=r#"^com\.mitchellh\.ghostty$"# title=r#"^btop$"#
+    default-column-width { proportion 0.66667; }
+}
+
 window-rule {
     match app-id="^Alacritty$"    
     background-effect {
@@ -43,6 +49,7 @@ window-rule {
 	noise 0.02
         saturation 1.2
     }
+    default-column-width { proportion 0.33333; }
 }
 window-rule {
     match app-id="^zen$"

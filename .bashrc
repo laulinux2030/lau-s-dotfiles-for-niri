@@ -118,6 +118,7 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 	alias zdotgit='z /home/lau/SSD700/dotfilesrepo.git'
         alias hotspot-phone='nmcli connection up "iPhone 12m" --ask'
 	alias spot="spicetify apply"
+	alias config='nvim ~/.config/niri/config.kdl'
 # Wallpaper + Live Lock Screen
 # Alias definitions.
 # You may want to put all your additions into a separate file like
