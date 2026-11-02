@@ -20,7 +20,7 @@
   },
   "modules": [
     "title",
-    "separator",
+    "break",
     {
       "type": "os",
       "key": "OS",
@@ -42,13 +42,20 @@
       "keyColor": "{{colors.secondary.default.hex}}"
     },
     {
-      "type": "shell",
-      "key": "Shell",
+      "type": "memory",
+      "key": "Memory",
       "keyColor": "{{colors.secondary.default.hex}}"
     },
     {
+      "type": "cpu",
+      "key": "CPU",
+      "keyColor": "{{colors.secondary.default.hex}}",
+      "format": "{1}"
+    },
+
+    {
       "type": "wm",
-      "key": "WM",
+      "key": "Desktop",
       "keyColor": "{{colors.tertiary.default.hex}}"
     },
     {
@@ -57,10 +64,11 @@
       "keyColor": "{{colors.tertiary.default.hex}}"
     },
     {
-      "type": "memory",
-      "key": "Memory",
+      "type": "terminalfont",
+      "key": "Font",
       "keyColor": "{{colors.tertiary.default.hex}}"
     },
+
     "break",
     "colors"
   ]

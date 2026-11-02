@@ -20,7 +20,7 @@
   },
   "modules": [
     "title",
-    "separator",
+    "break",
     {
       "type": "os",
       "key": "OS",
@@ -42,13 +42,20 @@
       "keyColor": "#b1ccc6"
     },
     {
-      "type": "shell",
-      "key": "Shell",
+      "type": "memory",
+      "key": "Memory",
       "keyColor": "#b1ccc6"
     },
     {
+      "type": "cpu",
+      "key": "CPU",
+      "keyColor": "#b1ccc6",
+      "format": "{1}"
+    },
+
+    {
       "type": "wm",
-      "key": "WM",
+      "key": "Desktop",
       "keyColor": "#adcae5"
     },
     {
@@ -57,10 +64,11 @@
       "keyColor": "#adcae5"
     },
     {
-      "type": "memory",
-      "key": "Memory",
+      "type": "terminalfont",
+      "key": "Font",
       "keyColor": "#adcae5"
     },
+
     "break",
     "colors"
   ]

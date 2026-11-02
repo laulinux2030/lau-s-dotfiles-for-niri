@@ -1,6 +1,10 @@
 @define-color primarydark #005048;
 @define-color primary #82d5c7;
-@define-color secondary #334b47;
+
+/* @define-color secondary #334b47; */
+
+@define-color secondary #0e1513;
+
 @define-color tertiary #2d4960;
 @define-color tertiarybright #adcae5;
 @define-color on-primary #003731;
