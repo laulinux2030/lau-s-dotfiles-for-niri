@@ -14,7 +14,7 @@ escape_json() {
 }
 
 if [ "$IS_VIDEO" = "true" ]; then
-    icon="󰃽 "
+    icon=" "
 elif [ "$IS_GIF" = "true" ]; then
     icon="󰵸 "
 else

@@ -281,3 +281,21 @@ tooltip {
     border-radius: 6px;
     padding: 0 16px;
 }
+
+#custom-config {
+    background: @secondary;
+    border: 0px solid @text;
+    border-radius: 5px;
+    margin: 4px 2px;
+    padding: 0 12px;
+    color: @text;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#custom-config:hover {
+    background: @secondary;
+    color: #ffffff;
+    border: 1px solid @primary;
+    border-radius: 6px;
+    padding: 0 16px;
+}
