@@ -2,53 +2,53 @@
 # theme[main_bg] bleibt ungesetzt
 
 # Main text color
-theme[main_fg]="#dde4e1"
+theme[main_fg]="#eee0d5"
 
 # Title color for boxes
-theme[title]="#82d5c7"
+theme[title]="#faba72"
 
 # Highlight color for keyboard shortcuts
-theme[hi_fg]="#adcae5"
+theme[hi_fg]="#bdcd9c"
 
 # Background color of selected item in processes box
-theme[selected_bg]="#005048"
+theme[selected_bg]="#673d00"
 
 # Foreground color of selected item in processes box
-theme[selected_fg]="#9ef2e3"
+theme[selected_fg]="#ffddbb"
 
 # Color of inactive/disabled text
-theme[inactive_fg]="#899390"
+theme[inactive_fg]="#9d8e81"
 
 # Color of graph background lines/borders
-theme[proc_misc]="#3f4946"
+theme[proc_misc]="#50453a"
 
 # Cpu box color gradient
-theme[cpu_start]="#b1ccc6"
-theme[cpu_mid]="#adcae5"
+theme[cpu_start]="#e0c1a3"
+theme[cpu_mid]="#bdcd9c"
 theme[cpu_end]="#ffb4ab"
 
 # Mem/Disk meter colors
-theme[free_start]="#b1ccc6"
-theme[free_mid]="#adcae5"
-theme[free_end]="#82d5c7"
+theme[free_start]="#e0c1a3"
+theme[free_mid]="#bdcd9c"
+theme[free_end]="#faba72"
 
-theme[cached_start]="#b1ccc6"
-theme[cached_mid]="#adcae5"
-theme[cached_end]="#82d5c7"
+theme[cached_start]="#e0c1a3"
+theme[cached_mid]="#bdcd9c"
+theme[cached_end]="#faba72"
 
-theme[available_start]="#b1ccc6"
-theme[available_mid]="#adcae5"
-theme[available_end]="#82d5c7"
+theme[available_start]="#e0c1a3"
+theme[available_mid]="#bdcd9c"
+theme[available_end]="#faba72"
 
 theme[used_start]="#ffb4ab"
-theme[used_mid]="#adcae5"
-theme[used_end]="#82d5c7"
+theme[used_mid]="#bdcd9c"
+theme[used_end]="#faba72"
 
 # Net download/upload graph colors
-theme[download_start]="#b1ccc6"
-theme[download_mid]="#adcae5"
-theme[download_end]="#82d5c7"
+theme[download_start]="#e0c1a3"
+theme[download_mid]="#bdcd9c"
+theme[download_end]="#faba72"
 
-theme[upload_start]="#b1ccc6"
-theme[upload_mid]="#adcae5"
-theme[upload_end]="#82d5c7"
+theme[upload_start]="#e0c1a3"
+theme[upload_mid]="#bdcd9c"
+theme[upload_end]="#faba72"
