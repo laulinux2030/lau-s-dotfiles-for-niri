@@ -95,7 +95,8 @@ alias l='ls -CF'
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 #custom aliases
-	alias aptup='sudo apt update -y && sudo apt upgrade -y && sudo snap refresh'
+	alias aptup='sudo apt update -y && sudo apt upgrade && sudo snap refresh'
+	alias aptupfl='sudo apt update -y && sudo apt upgrade && sudo snap refresh && flatpak update'
 	alias trempty='trash-empty'
 	alias ff='fastfetch'
 	alias nf='nerdfetch'
