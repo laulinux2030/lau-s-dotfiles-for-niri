@@ -1,12 +1,12 @@
-@define-color primarydark #004c6e;
-@define-color primary #94cdf7;
+@define-color primarydark #314578;
+@define-color primary #b3c5ff;
 
-/* @define-color secondary #384956; */
+/* @define-color secondary #414659; */
 
-@define-color secondary #101417;
+@define-color secondary #121318;
 
-@define-color tertiary #4c4163;
-@define-color tertiarybright #cec0e8;
-@define-color on-primary #00344d;
-@define-color background #101417;
-@define-color text #dfe3e8;
+@define-color tertiary #5a3d58;
+@define-color tertiarybright #e1bbdc;
+@define-color on-primary #192e60;
+@define-color background #121318;
+@define-color text #e3e2e9;

@@ -1,5 +1,5 @@
 * {
-    bg-dark: 		      {{colors.secondary_container.default.hex}};
+    bg-dark: 		      {{colors.surface.default.hex}};
     bg:                       {{colors.surface.default.rgba | set_alpha: 0.5}};
     bg-alt2:		      {{colors.primary_container.default.rgba}};
     bg-alt:                   {{colors.surface_container_high.default.rgba | set_alpha: 0.6}};
