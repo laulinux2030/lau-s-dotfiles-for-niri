@@ -1,15 +1,9 @@
 include optional=true "colors.kdl"
 prefer-no-csd
-
-// spawn-at-startup "swayidle" "-w" "timeout" "2250" "~/.config/rofi/scripts/lock.sh"
-
 spawn-at-startup "swayidle" "-w" \
-    "timeout" "300" "pidof hyprlock || hyprlock &" \
-    "timeout" "330" "niri msg action power-off-monitors" \
-    "resume" "niri msg action power-on-monitors" \
-    "lock" "pidof hyprlock || hyprlock &" \
-    "before-sleep" "pidof hyprlock || hyprlock & sleep 1"
-
+    "timeout" "300" "/home/lau/.config/niri/scripts/hyprlock30min.sh" \
+    "lock" "/home/lau/.config/niri/scripts/hyprlock30min.sh" \
+    "before-sleep" "/home/lau/.config/niri/scripts/hyprlock.sh; sleep 1"
 spawn-at-startup "~/.config/niri/scripts/restore-wallpaper.sh"
 spawn-at-startup "mako"
 spawn-sh-at-startup "ghostty -e bash -c 'fastfetch; exec bash'"
@@ -141,7 +135,7 @@ input {
     mode "2560x1440@164.999"
     max-bpc 10
      hdr mode="on" {
-         reference-luminance 150
+         reference-luminance 190
     }
     scale 1.25
 }
@@ -406,7 +400,7 @@ binds {
     Mod+T hotkey-overlay-title="Open a Terminal: ghostty" { spawn "env" "GTK_IM_MODULE=simple" "ghostty"; }
     Mod+D { spawn "~/.config/rofi/scripts/drun.sh"; }
     Mod+W { spawn "bash" "-c" "~/.config/rofi/scripts/wallpaper_selector_mpv.sh"; }
-    Mod+Alt+L { spawn "hyprlock"; }
+    Mod+Alt+L { spawn "~/.config/niri/scripts/hyprlock30min.sh"; }
     Mod+E { spawn "~/.config/rofi/scripts/rofi-power.sh"; }
     Mod+M { spawn "bash" "-c" "~/.config/rofi/scripts/mountalt.sh"; }
     Mod+P { spawn "playerctl" "play-pause"; }

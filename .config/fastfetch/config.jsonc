@@ -14,8 +14,8 @@
   "display": {
     "separator": " ➜  ",
     "color": {
-      "keys": "#82d5c7",
-      "title": "#b1ccc6"
+      "keys": "#ffb3b0",
+      "title": "#e6bdba"
     }
   },
   "modules": [
@@ -24,49 +24,49 @@
     {
       "type": "os",
       "key": "OS",
-      "keyColor": "#82d5c7"
+      "keyColor": "#ffb3b0"
     },
     {
       "type": "kernel",
       "key": "Kernel",
-      "keyColor": "#82d5c7"
+      "keyColor": "#ffb3b0"
     },
     {
       "type": "uptime",
       "key": "Uptime",
-      "keyColor": "#82d5c7"
+      "keyColor": "#ffb3b0"
     },
     {
       "type": "packages",
       "key": "Packages",
-      "keyColor": "#b1ccc6"
+      "keyColor": "#e6bdba"
     },
     {
       "type": "memory",
       "key": "Memory",
-      "keyColor": "#b1ccc6"
+      "keyColor": "#e6bdba"
     },
     {
       "type": "cpu",
       "key": "CPU",
-      "keyColor": "#b1ccc6",
+      "keyColor": "#e6bdba",
       "format": "{1}"
     },
 
     {
       "type": "wm",
       "key": "Desktop",
-      "keyColor": "#adcae5"
+      "keyColor": "#e3c28c"
     },
     {
       "type": "terminal",
       "key": "Terminal",
-      "keyColor": "#adcae5"
+      "keyColor": "#e3c28c"
     },
     {
       "type": "terminalfont",
       "key": "Font",
-      "keyColor": "#adcae5"
+      "keyColor": "#e3c28c"
     },
 
     "break",
