@@ -5,5 +5,5 @@ hyprlock &
 hl=$!
 (
     sleep 1800
-    kill -0 "$hl" 2>/dev/null && niri msg action power-off-monitors
+    kill -0 "$hl" 2>/dev/null && systemctl suspend
 ) >/dev/null 2>&1 &
