@@ -120,6 +120,13 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
         alias hotspot-phone='nmcli connection up "iPhone 12m" --ask'
 	alias spot="spicetify apply"
 	alias config='nvim ~/.config/niri/config.kdl'
+	alias swayidle10='pkill -x swayidle; setsid -f swayidle -w \
+    timeout 600 /home/lau/.config/niri/scripts/hyprlock30min.sh \
+    lock /home/lau/.config/niri/scripts/hyprlock30min.sh \
+    before-sleep "/home/lau/.config/niri/scripts/hyprlock30min.sh; sleep 1" \
+    >/dev/null 2>&1'
+
+	alias swayidleoff='pkill -x swayidle'
 # Wallpaper + Live Lock Screen
 # Alias definitions.
 # You may want to put all your additions into a separate file like

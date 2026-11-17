@@ -9,7 +9,7 @@
   "margin-left": 10,
   "margin-top": -26,
   "modules-left": [],
-  "modules-center": ["custom/media", "custom/drun", "custom/sunshine","custom/weather","custom/wallpaper", "clock", "memory", "custom/cputemp", "network", "pulseaudio", "custom/mount", "custom/hdr" , "custom/config", "custom/power"],
+  "modules-center": ["custom/media", "custom/drun", "custom/sunshine","custom/weather","custom/wallpaper", "clock", "memory", "custom/cputemp", "network", "pulseaudio", "custom/mount", "custom/hdr" , "custom/config", "custom/swayidle", "custom/power"],
   "modules-right": [],
 
   // MODULES
@@ -33,6 +33,15 @@
         "critical": ""   // 77 °C and above
     },
     "on-click": "ghostty -e btop"
+  },
+
+  "custom/swayidle": {
+    "exec": "~/.config/waybar/swayidle-toggle.sh status",
+    "return-type": "json",
+    "interval": 0.2,
+    "signal": 8,
+    "on-click": "~/.config/waybar/swayidle-toggle.sh toggle",
+    "tooltip": true
   },
 
   "clock": {
