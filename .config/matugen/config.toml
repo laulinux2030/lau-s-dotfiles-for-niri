@@ -55,7 +55,7 @@ input_path = '~/.config/matugen/templates/neovim.lua'
 output_path = '~/.config/nvim/lua/plugins/matugen-theme.lua'
 
 [templates.gtk4]
-input_path = '~/.config/matugen/templates/gtk.css'
+input_path = '~/.config/matugen/templates/gtk4.css'
 output_path = '~/.config/gtk-4.0/gtk.css'
 
 [templates.gtk3]

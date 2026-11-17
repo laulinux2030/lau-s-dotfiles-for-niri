@@ -42,7 +42,7 @@ case "$code" in
     51|53|55|56|57) condition="Nieselregen";       day_icon="󰖗"; night_icon="󰖝" ;;
     61|63|65|66|67) condition="Regen";             day_icon="󰖗"; night_icon="󰖝" ;;
     71|73|75|77)    condition="Schnee";            day_icon="󰖘"; night_icon="󰖞" ;;
-    80|81|82)       condition="Regenschauer";      day_icon="󰼃"; night_icon="󰖝" ;;
+    80|81|82)       condition="Regenschauer";      day_icon="󰖗"; night_icon="󰖝" ;;
     85|86)          condition="Schneeschauer";     day_icon="󰖘"; night_icon="󰖞" ;;
     95|96|99)       condition="Gewitter";          day_icon="󰖓"; night_icon="󰖓" ;;
     *)              condition="Unbekannt";         day_icon="󰖕"; night_icon="󰖔" ;;

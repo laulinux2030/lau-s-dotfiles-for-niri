@@ -137,7 +137,7 @@
 
   "custom/drun": {
     "interval": 0.3,
-    "format": "󰚺 run",
+    "format": "󰚺 drun",
     "tooltip": false,
     "on-click": "~/.config/rofi/scripts/drun.sh"
   },
