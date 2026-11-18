@@ -40,7 +40,7 @@
     "return-type": "json",
     "interval": 0.2,
     "signal": 8,
-    "on-click": "~/.config/waybar/swayidle-toggle.sh toggle",
+    "on-click": "~/.config/rofi/scripts/idle-menu.sh",
     "tooltip": true
   },
 
