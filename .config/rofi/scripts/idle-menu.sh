@@ -40,9 +40,11 @@ case "$choice" in
     *)
         if [[ $choice =~ ^[0-9]+$ ]] && (( 10#$choice > 0 )); then
             min=$((10#$choice))
+            env_args=()
+            for v in $(compgen -e); do env_args+=(--setenv="$v"); done
             systemctl --user stop lock-timer.timer 2>/dev/null
-            if systemd-run --user --quiet --collect --unit=lock-timer --on-active="${min}min" \
-                --setenv=WAYLAND_DISPLAY="$WAYLAND_DISPLAY" --setenv=PATH="$PATH" "$LOCK"; then
+		if systemd-run --user --quiet --collect --unit=lock-timer --on-active="${min}min" \
+                "${env_args[@]}" niri msg action spawn -- "$LOCK"; then
                 echo $(( $(date +%s) + min * 60 )) > "$DEADLINE"
                 pkill -RTMIN+8 waybar
                 notify-send "Lock timer" "Locking in $min min"
