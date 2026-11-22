@@ -9,7 +9,10 @@
   "margin-left": 10,
   "margin-top": -26,
   "modules-left": [],
-  "modules-center": ["custom/media", "custom/drun", "custom/sunshine","custom/weather","custom/wallpaper", "clock", "memory", "custom/cputemp", "network", "pulseaudio", "custom/mount", "custom/hdr" , "custom/config", "custom/swayidle", "custom/power"],
+  "modules-center": ["custom/media", "custom/config", "custom/drun", "custom/sunshine","custom/weather","custom/wallpaper", "clock", "memory", "custom/cputemp", "network", "pulseaudio", "custom/mount", "custom/hdr" , "custom/power"],
+
+/* removed custom/swayidle */
+
   "modules-right": [],
 
   // MODULES

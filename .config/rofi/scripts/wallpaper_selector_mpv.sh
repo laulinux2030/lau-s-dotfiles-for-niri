@@ -85,4 +85,14 @@ IS_GIF=$( [[ "$selected" =~ \.(gif|GIF)$ ]] && echo "true" || echo "false" )
 EOF
 
     echo "Wallpaper state saved to $STATE_FILE" >> "$LOG_FILE"
+
+    # F) Hyprlock-Hintergrund: bei .mp4 das Video selbst, sonst das Standbild.
+    #    Das Video wird nur gesetzt, wenn hyprlock mit FFmpeg gebaut ist (Fork mit
+    #    Video-Support, linkt libavcodec) - sonst bleibt es beim Standbild.
+    #    '#' wird zu '##' escaped, weil hyprlang '#' sonst als Kommentar liest.
+    LOCK_BG="$HOME/.cache/rofi_current_wallpaper.png"
+    if [[ "$selected" =~ \.(mp4|MP4)$ ]] && ldd "$(command -v hyprlock)" 2>/dev/null | grep -q 'libavcodec'; then
+        LOCK_BG="$WALLPAPER_PATH"
+    fi
+    printf '$LOCK_BG = %s\n' "${LOCK_BG//#/##}" > "$HOME/.cache/hyprlock_bg.conf"
 fi
