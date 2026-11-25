@@ -2,7 +2,7 @@
 lastLoadedOutputPreset=EQ BASS BOOST
 
 [StreamInputs]
-inputDevice=easyeffects_sink
+inputDevice=alsa_input.usb-Focusrite_Scarlett_Solo_USB_Y79F7T40853ABE-00.Direct__Direct__source
 
 [StreamOutputs]
 mostUsedPresets=EQ BASS BOOST
