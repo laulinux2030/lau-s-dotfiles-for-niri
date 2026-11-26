@@ -14,6 +14,58 @@ mkdir -p "$(dirname "$STATE_FILE")"
 # Locate matugen binary explicitly
 MATUGEN_BIN="$(command -v matugen || echo "$HOME/.cargo/bin/matugen" || echo "$HOME/.local/bin/matugen")"
 
+# ---------------------------------------------------------------------------
+# Rofi wallpaper cache
+# Rofi decodes + scales the image from the .rasi on EVERY start. Instead of the
+# full-size wallpaper, each menu gets its own pre-scaled copy (built once per
+# wallpaper change). The .rasi files keep their `height` scaling mode, so the
+# layout stays identical; rofi just has a tiny file to decode.
+#   ~/.cache/rofi_current_wallpaper.png stays untouched (hyprlock fallback etc.)
+# ---------------------------------------------------------------------------
+ROFI_WALL_SRC="$HOME/.cache/rofi_current_wallpaper.png"
+ROFI_WALL_CACHE="$HOME/.cache/rofi-wall"
+
+# Monitor: 2560x1440 @ 1.25 scale
+RENDER_SCALE=1.25     # physical pixels per logical pixel
+OVERSAMPLE=1.15       # safety margin for font-metric differences / sharpness
+
+# menu name : max height (logical px) of the left image box, i.e. the full
+# height of the right box at its configured number of listview lines
+declare -A ROFI_BOX_HEIGHT=(
+    [drun]=303
+    [wallpaper]=309
+    [config]=209
+    [cliphist]=209
+    [mount]=215
+)
+
+build_rofi_wall_cache() {
+    local src="$1" name h out
+    [ -f "$src" ] || return 1
+    mkdir -p "$ROFI_WALL_CACHE"
+    for name in "${!ROFI_BOX_HEIGHT[@]}"; do
+        # target height in physical pixels, rounded to an even number
+        h=$(awk -v h="${ROFI_BOX_HEIGHT[$name]}" -v s="$RENDER_SCALE" -v o="$OVERSAMPLE" \
+            'BEGIN { v = int(h * s * o + 0.5); if (v % 2) v++; print v }')
+        out="$ROFI_WALL_CACHE/$name.png"
+        # keep aspect ratio, never upscale, write atomically (tmp + mv)
+        ffmpeg -y -v error -i "$src" \
+            -vf "scale=-2:'min(ih,${h})':flags=lanczos" \
+            -frames:v 1 -update 1 "$out.tmp.png" \
+            && mv -f "$out.tmp.png" "$out"
+    done
+}
+
+# Standalone mode (first-time setup, restore-wallpaper.sh, manual rebuild):
+#   wallpaper_selector_mpv.sh --rebuild-cache
+if [ "$1" = "--rebuild-cache" ]; then
+    build_rofi_wall_cache "$ROFI_WALL_SRC"
+    exit $?
+fi
+
+# Self-heal: make sure this script's own menu has its cached image
+[ -f "$ROFI_WALL_CACHE/wallpaper.png" ] || build_rofi_wall_cache "$ROFI_WALL_SRC"
+
 # 1. Build thumbnail cache and Rofi image list
 rofi_input=""
 while IFS= read -r -d '' img; do
@@ -68,7 +120,10 @@ if [ -n "$selected" ]; then
     fi
 
     # C) Standbild für Rofi-Theme bereitstellen
-    cp -f "$IMAGE_TO_USE" "$HOME/.cache/rofi_current_wallpaper.png"
+    cp -f "$IMAGE_TO_USE" "$ROFI_WALL_SRC"
+
+    # C2) Pre-scaled per-menu copies for rofi (background job, atomic writes)
+    build_rofi_wall_cache "$IMAGE_TO_USE" >/dev/null 2>&1 &
 
     # D) Matugen generiert die Farben aus dem Standbild
     "$MATUGEN_BIN" image "$IMAGE_TO_USE" -m dark --source-color-index 0 > "$LOG_FILE" 2>&1
